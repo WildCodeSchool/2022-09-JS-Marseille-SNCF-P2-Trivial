@@ -1,0 +1,72 @@
+.footcontent {
+    background-color: #9836D9;
+    width: 98% ;
+    height: 8em ;
+    font-size: x-large;
+    color: black;
+    margin-top: 0.2em;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content:space-around; 
+    list-style: none; 
+    margin-bottom: 0.1em;
+    margin-top:2.0em;
+}
+
+.Accueil {
+    background-color: #5FA0D9;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 4em;
+  
+    padding-top: 0.3em;
+    margin-top: 1em;
+}
+.Contact {
+    background-color: #5FA0D9;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 3em;
+    padding-top: 0.3em;
+    margin-top: 1em;
+}
+
+.Réseaux {
+    background-color: #5FA0D9;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 25em;
+    padding-top: 0.3em;
+    margin-top: 1em;
+}
+
+.Copyright {
+   margin-left: 38em;
+   margin-top: 2.5em;
+   font-size: medium;
+  
+}
+
+.Facebook{
+   width: 1em;
+   height:1em;
+   margin-left: 2.5em;
+   margin-top: 0.3em;
+}
+.Instagram {
+    width: 1em;
+    height: 1em;
+    margin-left: 2.5em;
+    margin-top: 0.3em;
+}
+
+.Twitter {
+    width: 1em;
+    height: 1em;
+    margin-left: 2.5em;
+    margin-top: 0.3em;
+}
