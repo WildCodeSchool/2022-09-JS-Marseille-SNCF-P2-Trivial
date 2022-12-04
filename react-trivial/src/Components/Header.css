@@ -1,0 +1,94 @@
+* {
+    --primarycolor: #635a5a;
+    --secondarycolor: #66a50e;
+    --thirdcolor: #ebca8f;
+    --fourthcolor: #efb91c;
+    --fifthcolor: #a53b47;
+    --sixthcolor: #801b06;
+    --seventhcolor: #377c2e;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.myHeader {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+   /* background: linear-gradient(to bottom right, var(--primarycolor), var(--fourthcolor));*/
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    -webkit-animation: color-change-3x 6s linear infinite alternate both;
+    animation: color-change-3x 6s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+    0% {
+      background: var(--primarycolor);
+    }
+    50% {
+        background: var(--fifthcolor);
+    }
+    100% {
+      background: var(--fourthcolor);
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: var(--primarycolor);
+    }
+    50% {
+        background: var(--fifthcolor);
+    }
+    100% {
+      background: var(--fourthcolor);
+    }
+  }
+  
+.headerLogo {
+    margin-right: 3%;
+}
+
+.headerTitle {
+    font-size: clamp(1rem, 8vw, 4rem);
+    font-weight: 600;
+    color: var(--thirdcolor);
+    letter-spacing: 0.28rem;
+    text-shadow: 3px 1px 1px var(--sixthcolor), 2px 2px 1px var(--fourthcolor), 4px 2px 1px var(--sixthcolor),
+    3px 3px 1px var(--fourthcolor), 5px 3px 1px var(--sixthcolor), 4px 4px 1px var(--fourthcolor),
+    6px 4px 1px var(--sixthcolor), 5px 5px 1px var(--fourthcolor), 7px 5px 1px var(--sixthcolor),
+    6px 6px 1px var(--fourthcolor), 8px 6px 1px var(--sixthcolor), 7px 7px 1px var(--fourthcolor),
+    9px 7px 1px var(--sixthcolor);
+}
+
+.headerPoint0 {
+    height: 70px;
+    width: 70px;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.headerPoint {
+    height: 40px;
+    width: 40px;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.headerPoint1 {
+    height: 50px;
+    width: 50px;
+    margin-left: 0%;
+    margin-top: 6%;
+}
+
+.headerPoint2 {
+    height: 65px;
+    width: 65px;
+    margin-left: 0%;
+    margin-top: 0.2%;
+}
+
+.headerPoint3 {
+    height: 90px;
+    width: 90px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
