@@ -1,72 +1,88 @@
+:root {
+    --main-bg-color: #9836D9;
+    --second-bg-color:#6360BF;
+    --third-bg-color:#5FA0D9;
+    --fourth-bg-color:#A9BF5A;
+    --fifth-bg-color:#D9AA71; 
+}
+
 .footcontent {
-    background-color: #9836D9;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
     width: 98% ;
-    height: 8em ;
-    font-size: x-large;
+    height: 11em ;
+    font-size: small;
     color: black;
-    margin-top: 0.2em;
     margin-left: 10px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
-.categories {
+ul {
     display: flex;
-    justify-content:space-around; 
-    list-style: none; 
-    margin-bottom: 0.1em;
-    margin-top:2.0em;
+    flex-direction:row;
+    font-size:15px ;
+    text-decoration: none;
+    justify-content: center; 
 }
 
-.Accueil {
-    background-color: #5FA0D9;
-    font-size: medium;
-    font-weight: bold;
-    margin-left: 4em;
-  
-    padding-top: 0.3em;
-    margin-top: 1em;
-}
-.Contact {
-    background-color: #5FA0D9;
-    font-size: medium;
-    font-weight: bold;
-    margin-left: 3em;
-    padding-top: 0.3em;
-    margin-top: 1em;
+a { 
+    font-size:17px;
+    color: black;
+    font-weight: bold;  
 }
 
-.Réseaux {
-    background-color: #5FA0D9;
-    font-size: medium;
-    font-weight: bold;
-    margin-left: 25em;
-    padding-top: 0.3em;
-    margin-top: 1em;
+.categories{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 0.5em;
+}
+
+.firstline li {
+    margin-right: 2em;
+    list-style: none;
+}
+
+.secondline li {
+    margin-right: 2em;
+    list-style: none;
 }
 
 .Copyright {
-   margin-left: 38em;
-   margin-top: 2.5em;
-   font-size: medium;
-  
+   margin-left:55em;
+   color: black;
+   font-size:14px; 
+   font-weight: bold; 
 }
 
-.Facebook{
-   width: 1em;
-   height:1em;
-   margin-left: 2.5em;
-   margin-top: 0.3em;
-}
-.Instagram {
-    width: 1em;
-    height: 1em;
-    margin-left: 2.5em;
-    margin-top: 0.3em;
+/* reseaux sociaux*/ 
+
+.imgsoc{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.5em;
 }
 
-.Twitter {
-    width: 1em;
-    height: 1em;
-    margin-left: 2.5em;
-    margin-top: 0.3em;
+.logface{
+    margin-left:15em;
+}
+
+.loginst {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.loglink {
+    margin-right: 1em;
+}
+
+.logtwit {
+    margin-left: em;
+    margin-right: 0em;
+}
+
+.logtiktok{
+margin-left: 1.5em;
 }
