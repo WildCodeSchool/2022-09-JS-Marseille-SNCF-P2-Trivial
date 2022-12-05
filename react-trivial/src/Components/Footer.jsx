@@ -11,7 +11,7 @@ function Footer() {
             <div className='footcontent'>               
                 <div className='categories'>
                     <a href='Accueil'>Accueil</a>
-                    <a href='Categories'>Categories</a> 
+                    <a href='Categories'>Catégories</a> 
                     <a href='Contact'>Nous contacter</a>   
                 </div>
                     <ul className='firstline'>
@@ -33,7 +33,7 @@ function Footer() {
                         <img className='loglink' src={image3} alt="logo linkedin" />
                         <img className='logtwit' src={image4} alt="logo twitter" />
                         <img className='logtiktok' src={image5} alt="logo tiktok" />
-                        <p className='Copyright'>Copyright2022/Tous/droits/réservés</p>  
+                        <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>  
                 </div>
              </div>                   
         );
