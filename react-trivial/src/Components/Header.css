@@ -1,4 +1,5 @@
 * {
+  margin: ;
     --primarycolor: #635a5a;
     --secondarycolor: #66a50e;
     --thirdcolor: #ebca8f;
@@ -12,6 +13,7 @@
 .myHeader {
     display: flex;
     justify-content: center;
+    margin: 0.2%;
     border-radius: 20px;
    /* background: linear-gradient(to bottom right, var(--primarycolor), var(--fourthcolor));*/
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);

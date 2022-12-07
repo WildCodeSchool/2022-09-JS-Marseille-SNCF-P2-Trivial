@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import logo from '../images/imageonline-co-convertedpngimage-modified-removebg-preview-modified.png';
-import point from '../images/Interrogação-PNG.png'
+import logo from '../Images/imageonline-co-convertedpngimage-modified-removebg-preview-modified.png';
+import point from '../Images/Interrogação-PNG.png'
 function Header () {
 
     return (

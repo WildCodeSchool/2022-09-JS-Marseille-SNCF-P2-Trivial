@@ -15,9 +15,9 @@ input {
     height: 14rem;
     background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
     border-radius: 20px;
+    margin: 0.2%;
     margin-top: 0.5%;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
-
 }
 
 .myNav2 {
@@ -25,10 +25,12 @@ input {
     flex-direction: column;
     align-items: center;
     width: 13%;
-    height: 23rem;
+    height: 22rem;
     background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
     border-radius: 20px;
-    margin-top: 0.4%;
+    margin: 0.2%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
 }
 
@@ -53,8 +55,7 @@ input {
     height: 1.5rem;
     border-radius: 5px;
     border: none;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
-
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
 }
 
 .newsLetter {
