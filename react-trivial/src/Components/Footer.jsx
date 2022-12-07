@@ -19,14 +19,11 @@ function Footer() {
                         <li>Musique</li>
                         <li>Jeux Videos</li>
                         <li>Ordinateurs</li>
-                    <li>Geographie</li>
-                    <li>Film/Tv</li>
+                        <li>Geographie</li>
+                        <li>Film/Tv</li>
                         <li>Manga</li>
                         <li>Mythologie</li>
                         <li>Choix Aleatoire</li>
-                    </ul>
-                    <ul className='secondline'>
-                        
                     </ul>
                 <div className="imgsoc"> 
                     <img className='logface' src={image1} alt="logo facebook" />
