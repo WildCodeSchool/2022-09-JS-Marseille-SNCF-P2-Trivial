@@ -12,28 +12,30 @@ function Footer() {
                 <div className='categories'>
                     <a href='Accueil'>Accueil</a>
                     <a href='Categories'>Catégories</a> 
-                    <a href='Contact'>Nous contacter</a>   
+                    <a href='Contact'>Contact</a>   
                 </div>
                     <ul className='firstline'>
                         <li>Sport</li>
                         <li>Musique</li>
                         <li>Jeux Videos</li>
                         <li>Ordinateurs</li>
-                        <li>Geographie</li>
-                    </ul>
-                    <ul className='secondline'>
-                        <li>Film/Tv</li>
+                    <li>Geographie</li>
+                    <li>Film/Tv</li>
                         <li>Manga</li>
                         <li>Mythologie</li>
                         <li>Choix Aleatoire</li>
                     </ul>
+                    <ul className='secondline'>
+                        
+                    </ul>
                 <div className="imgsoc"> 
-                        <img className='logface' src={image1} alt= "logo facebook" />
-                        <img className='loginst' src={image2} alt="logo instagram" />
-                        <img className='loglink' src={image3} alt="logo linkedin" />
-                        <img className='logtwit' src={image4} alt="logo twitter" />
-                        <img className='logtiktok' src={image5} alt="logo tiktok" />
-                        <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>  
+                    <img className='logface' src={image1} alt="logo facebook" />
+                    <img className='loginst' src={image2} alt="logo instagram" />
+                    <img className='loglink' src={image3} alt="logo linkedin" />
+                    <img className='logtwit' src={image4} alt="logo twitter" />
+                    <img className='logtiktok' src={image5} alt="logo tiktok" />
+                    <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>
+                        
                 </div>
              </div>                   
         );
