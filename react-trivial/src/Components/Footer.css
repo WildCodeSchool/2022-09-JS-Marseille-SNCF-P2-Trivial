@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     --primarycolor: #7e6a6a;
     --secondarycolor: #66a50e;
     --thirdcolor: #ebca8f;
@@ -12,15 +10,13 @@
 }
 
 .footcontent {
-    background-color: var(--fourthcolor);
+    /*background-color: var(--fourthcolor);*/
+    background: linear-gradient(to bottom right, var(--fourthcolor), var(--thirdcolor));
     border-radius: 20px;
-    width: 98% ;
-    height: 9em ;
     font-size: small;
     color: black;
-    margin-left: 10px;
+    margin: 0.2%;
     font-weight: bold; 
-    margin-top: 0.5em;
 }
 
 ul {
