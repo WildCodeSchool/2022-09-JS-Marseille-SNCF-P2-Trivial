@@ -1,35 +1,24 @@
-* {
-    --primarycolor: #7e6a6a;
-    --secondarycolor: #66a50e;
-    --thirdcolor: #ebca8f;
-    --fourthcolor: #efb91c;
-    --fifthcolor: #a53b47;
-    --sixthcolor: #801b06;
-    --seventhcolor: #377c2e;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .footcontent {
     /*background-color: var(--fourthcolor);*/
-    background: linear-gradient(to bottom right, var(--fourthcolor), var(--thirdcolor));
+    background: linear-gradient(to top left, var(--gamecolor), var(--fourthcolor), var(--gamecolor));
     border-radius: 20px;
     font-size: small;
-    color: black;
-    margin: 0.2%;
+    color: var(--sixthcolor);
     font-weight: bold; 
+    height: 5rem;
 }
 
 ul {
     display: flex;
     flex-direction:row;
-    font-size:15px ;
+    font-size:14px ;
     text-decoration: none;
     justify-content: center; 
 }
 
 a { 
-    font-size:15px;
-    color: black;
+    font-size: 1.02rem;
+    color: var(--sixthcolor);
     font-weight: bold;  
 }
 
@@ -40,22 +29,20 @@ a {
 }
 
 .firstline li {
-    margin-right: 2em;
+    margin-right: 0.8em;
     list-style: none;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
 }
 
-.secondline li {
+/*.secondline li {
     margin-right: 2em;
     list-style: none;
-    margin-top: 1em;
-}
+}*/
 
 .Copyright {
-   margin-left:77em;
-   color: black;
-   font-size:11px; 
-  
+   margin-left: 77em;
+   color: var(--sixthcolor);
+   font-size: 11px; 
 }
 
 /* reseaux sociaux*/ 
@@ -64,9 +51,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
-    width: 5em;
-    height:2em;
-    margin-top: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
     margin-left: 1em;
 }
 
@@ -84,11 +70,10 @@ a {
 }
 
 .logtwit {
-    margin-left: em;
+    margin-left: 0em;
     margin-right: 0em;
 }
 
 .logtiktok{
-margin-left: 1.5em;
-height:2em;
+    margin-left: 1em;
 }

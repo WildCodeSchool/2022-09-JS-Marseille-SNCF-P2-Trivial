@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+    --primarycolor: #635a5a;
+    --secondarycolor: #8ba017;
+    --thirdcolor: #ebca8f;
+    --fourthcolor: #f4b118;
+    --fifthcolor: #b63810;
+    --sixthcolor: #801b06;
+    --seventhcolor: #377c2e;
+    --appcolor: rgb(255, 253, 245);
+    --gamecolor: #f9e7cd;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header { grid-area: header; }
+nav { grid-area: nav; height: auto; }
+section { grid-area: section; }
+article { grid-area: article; }
+footer { grid-area: footer; }
+
+.App {
+    background-color: var(--appcolor);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 0.8fr 6fr;
+    grid-template-areas:
+    "header header header"
+    "nav section article"
+    "footer footer footer";
+    row-gap: 0.5%;
+    margin: 0.2%;
+}

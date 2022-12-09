@@ -6,9 +6,9 @@ const NavModal = ({setIsShowing}) =>   {
     return (
         <div className='modal'>
             <div className='modalContent'>
-              Merci pour votre adhésion à notre Newsletter. 
+              Merci pour votre adhésion. 
               Vous allez recevoir un mail de confirmation.
-            </div>
+            </div><br />
             <button className='modalButton' onClick={() => setIsShowing(false)}>Fermer</button>
         </div>
     )

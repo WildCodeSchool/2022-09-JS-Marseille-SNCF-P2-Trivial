@@ -8,7 +8,7 @@ import image5 from '../Images/tiktok2.png';
 
 function Footer() {
         return(
-            <div className='footcontent'>               
+            <footer className='footcontent'>               
                 <div className='categories'>
                     <a href='Accueil'>Accueil</a>
                     <a href='Categories'>Catégories</a> 
@@ -25,9 +25,9 @@ function Footer() {
                         <li>Mythologie</li>
                         <li>Choix Aleatoire</li>
                     </ul>
-                    <ul className='secondline'>
+                    {/*<ul className='secondline'>
                         
-                    </ul>
+        </ul>*/}
                 <div className="imgsoc"> 
                     <img className='logface' src={image1} alt="logo facebook" />
                     <img className='loginst' src={image2} alt="logo instagram" />
@@ -37,7 +37,7 @@ function Footer() {
                     <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>
                         
                 </div>
-             </div>                   
+             </footer>                   
         );
     }
 export default Footer;

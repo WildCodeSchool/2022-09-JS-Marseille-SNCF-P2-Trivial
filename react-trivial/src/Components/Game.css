@@ -1,0 +1,85 @@
+.sectionGame {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    column-gap: 5%;
+}
+
+.game {
+    height: 25rem;
+    width: 50rem;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+}
+
+.gameHeader {
+    text-align: center;
+    color: var(--sixthcolor);
+    margin-top: 6%;
+    font-size: 1.8rem;
+}
+
+.gameContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8.8%;
+    height: 25%;
+    row-gap: 35%;
+}
+
+.reponse {
+    border: none;
+    height: 60%;
+    width: 38%;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    color: var(--sixthcolor);
+    border-radius: 12px;
+    font-size: 1.3rem;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.counter h1 {
+    font-size: 1.7rem;
+}
+
+.counter h2 {
+    font-size: 2.5rem;
+    color: var(--secondarycolor);
+}
+
+.counter .timeEnd {
+    font-size: 2rem;
+}
+
+.counterQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 7rem;
+    width: 13rem;
+    color: var(--sixthcolor);
+}
+
+.counterTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 7rem;
+    width: 13rem;
+    color: var(--sixthcolor);
+}

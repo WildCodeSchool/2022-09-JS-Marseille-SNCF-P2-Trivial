@@ -52,16 +52,15 @@ function Nav () {
                 placeholder='Entrer votre email' 
                 value={usermail} 
                 onChange={() => handleMail()}/>
-                    <br /><br />
+                    <br />
             <div className='acceptCGU'>
                 <input 
                 type="checkbox" 
                 id='cgu' 
                 name='cgu'/>
-                <label htmlFor='cgu'>Accepter nos <a href=''>CGU</a></label>
-            </div>
+                <label htmlFor='cgu'> Accepter nos <a href=''>CGU</a></label>
+            </div><br />
                 <p><em>Service réservé aux personnes majeures et ayant la capacité juridique de contracter</em></p>
-                    <br />
                 {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' onClick={() => toggleModal()}>Je m'abonne</button>}
             </div>
             </nav>

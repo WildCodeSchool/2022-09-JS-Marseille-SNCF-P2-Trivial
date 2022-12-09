@@ -3,65 +3,58 @@ input {
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
-
 }
 
 .myNav1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap:wrap;
-    width: 13%;
-    height: 14rem;
+    width: auto;
+    min-height: 12rem;
     background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
     border-radius: 20px;
-    margin: 0.2%;
-    margin-top: 0.5%;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
 }
 
 .myNav2 {
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 13%;
-    height: 22rem;
+    width: auto;
+    min-height: 18.6rem;
     background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
     border-radius: 20px;
-    margin: 0.2%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
 }
 
 #difficulties {
-    margin-top: 6%;
+    margin-top: 3%;
 }
 
 .infosUser {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 18%;
+    margin-top: 4%;
 }
 
-.infosUser label {
+.infosUser strong {
     color: var(--sixthcolor);
     font-size:large;
 }
 
 .infosUser select {
     height: 1.5rem;
+    width: auto;
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
 }
 
 .newsLetter {
-    margin-top: 6%;
-    margin-bottom: 18%;
     text-align: center;
+    margin-top: 4%;
 }
 
 .newsLetter span {
@@ -69,9 +62,14 @@ input {
     font-size: larger;
 }
 
-.acceptCGU {
+.newsLetter input {
     margin-top: 10%;
 }
+
+.acceptCGU a {
+    font-size: 0.8rem;
+}
+
 .newsLetter label {
     color: #ffff;
     font-size: small;
@@ -82,6 +80,7 @@ input {
 }
 
 .newsLetter p em {
+    flex-wrap: wrap;
     color: #ffff;
     font-size: smaller;
 }
@@ -90,25 +89,24 @@ input {
     height: 1.8rem;
     border-radius: 5px;
     border: none;
+    margin-top: 14%;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
-    margin-top: 6%;
     box-shadow: 0px 10px 14px -7px;
 }
 
 .modalContent {
     color: var(--sixthcolor);
-    font-size: medium;
-    font-weight: 500;
+    font-size: small;
+    font-weight: 400;
+    margin-top: 4%;
 }
 
 .modalButton {
-    height: 1.4rem;
-    margin-top: 3%;
+    height: 1.2rem;
     border-radius: 5px;
     border: none;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
     box-shadow: 0px 10px 14px -7px;
-
 }
