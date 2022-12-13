@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    --primarycolor: #635A5A;
+    --secondarycolor: #8BA017;
+    --thirdcolor: #EBCA8F;
+    --fourthcolor: #E6A715;
+    --fifthcolor: #B63810;
+    --sixthcolor: #801B06;
+    --seventhcolor: #377C2E;
+    --appcolor: rgb(255, 253, 245);
+    --gamecolor: #F9E7CD;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}

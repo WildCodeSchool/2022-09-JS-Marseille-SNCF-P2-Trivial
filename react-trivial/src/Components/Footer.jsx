@@ -1,40 +1,80 @@
-import React from 'react';
-import './Footer.css';
-import image1 from '../Images/facebook.png';
-import image2 from '../Images/instagram.png';
-import image3 from '../Images/linkedin.png';
-import image4 from '../Images/twitter.png';
-import image5 from '../Images/tiktok2.png';
+import React, { useState } from "react";
+import "./Footer.css";
+import image1 from "../Images/facebook.png";
+import image2 from "../Images/instagram.png";
+import image3 from "../Images/linkedin.png";
+import image4 from "../Images/twitter.png";
+import image5 from "../Images/tiktok2.png";
+import FooterForm from "./FooterForm";
 
 function Footer() {
-        return(
-            <div className='footcontent'>               
-                <div className='categories'>
-                    <a href='Accueil'>Accueil</a>
-                    <a href='Categories'>Catégories</a> 
-                    <a href='Contact'>Contact</a>   
-                </div>
-                    <ul className='firstline'>
-                        <li>Sport</li>
-                        <li>Musique</li>
-                        <li>Jeux Videos</li>
-                        <li>Ordinateurs</li>
-                        <li>Geographie</li>
-                        <li>Film/Tv</li>
-                        <li>Manga</li>
-                        <li>Mythologie</li>
-                        <li>Choix Aleatoire</li>
-                    </ul>
-                <div className="imgsoc"> 
-                    <img className='logface' src={image1} alt="logo facebook" />
-                    <img className='loginst' src={image2} alt="logo instagram" />
-                    <img className='loglink' src={image3} alt="logo linkedin" />
-                    <img className='logtwit' src={image4} alt="logo twitter" />
-                    <img className='logtiktok' src={image5} alt="logo tiktok" />
-                    <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>
-                        
-                </div>
-             </div>                   
-        );
-    }
+  const [isOpen, setIsOpen] = useState(true);
+
+  console.log(isOpen);
+  return (
+    <div className="footcontent">
+      {isOpen && <FooterForm setIsOpen={setIsOpen} />}
+
+      <div className="categories">
+        <a href="Accueil">Accueil</a>
+        <a href="Categories">Catégories</a>
+        <a className="Contact" onClick={() => setIsOpen()} href="Contact">
+          Contact
+        </a>
+      </div>
+      <ul className="firstline">
+        <li>
+          <a href="Sport">Sports</a>
+        </li>
+        <li>
+          <a href="Musique">Musique</a>
+        </li>
+        <li>
+          <a href="Jeux Videos">Jeux Videos</a>
+        </li>
+        <li>
+          <a href="Ordinateurs">Ordinateurs</a>
+        </li>
+        <li>
+          <a href="Geographie">Geographie</a>
+        </li>
+        <li>
+          <a href="Film">Film</a>
+        </li>
+        <li>
+          <a href="Manga">Manga</a>
+        </li>
+        <li>
+          <a href="Mythologie">Mythologie</a>
+        </li>
+        <li>
+          <a href="Choix Aleatoire">Choix Aléatoire</a>
+        </li>
+      </ul>
+      <div className="imgsoc">
+        <a href="https://m.facebook.com/login/?locale=fr_FR">
+          {" "}
+          <img className="logface" src={image1} alt="logo facebook" />
+        </a>
+        <a href="https://www.instagram.com/?hl=fr">
+          {" "}
+          <img className="loginst" src={image2} alt="logo instagram" />
+        </a>
+        <a href="https://www.linkedin.com/feed/">
+          {" "}
+          <img className="loglink" src={image3} alt="logo linkedin" />
+        </a>
+        <a href="https://twitter.com/?lang=fr">
+          {" "}
+          <img className="logtwit" src={image4} alt="logo twitter" />
+        </a>
+        <a href="https://www.tiktok.com/?lang=fr">
+          {" "}
+          <img className="logtiktok" src={image5} alt="logo tiktok" />
+        </a>
+        <p className="Copyright">Copyright2022.Tousdroitsréservés</p>
+      </div>
+    </div>
+  );
+}
 export default Footer;
