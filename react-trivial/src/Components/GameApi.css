@@ -1,0 +1,116 @@
+.sectionGame {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    column-gap: 3%;
+    height: 100%;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    max-height: 100%;
+    width: 70%;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+}
+
+.gameHeader {
+    text-align: center;
+    color: var(--sixthcolor);
+    margin-top: 4%;
+    font-size: 1.2rem;
+    max-height: 25%;
+}
+
+.gameContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    height: 30%;
+    min-width: 30%;
+    row-gap: 25%;
+}
+
+.reponse {
+    border: none;
+    min-height: 64%;
+    width: 45%;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    color: var(--sixthcolor);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.counter h1 {
+    font-size: 1.1rem;
+}
+
+.counter h2 {
+    font-size: 1.2rem;
+    color: var(--secondarycolor);
+}
+
+.categorySelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 5rem;
+    width: 10rem;
+    color: var(--sixthcolor);
+} 
+
+.categorySelect h2 {
+    font-size: 1.1rem;
+}
+
+.counterQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 5rem;
+    width: 10rem;
+    color: var(--sixthcolor);
+}
+
+.counterQuestion h2 {
+    font-size: 1.6rem;
+}
+
+.counterTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--gamecolor);
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 5rem;
+    width: 10rem;
+    color: var(--sixthcolor);
+}
+
+.counterTime h2 {
+    font-size: 2rem;
+}
+
+h2 .timeEnd {
+    font-size: 1.1rem;
+}
