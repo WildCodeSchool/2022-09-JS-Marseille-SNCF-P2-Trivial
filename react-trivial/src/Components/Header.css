@@ -1,45 +1,46 @@
 .myHeader {
     display: flex;
     justify-content: center;
-    height: auto;
-    border-radius: 20px;
-    background: linear-gradient(to bottom right, var(--fifthcolor), var(--primarycolor));
+    height: 100%;
+    width: auto;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background: linear-gradient(to top left, var(--primarycolor), var(--fifthcolor));
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
-    /*-webkit-animation: color-change-3x 6s linear infinite alternate both;
-    animation: color-change-3x 6s linear infinite alternate both;*/
+    -webkit-animation: color-change-3x 6s linear infinite alternate both;
+    animation: color-change-3x 6s linear infinite alternate both;
 }
 
- /*@-webkit-keyframes color-change-3x {
+ @-webkit-keyframes color-change-3x {
     0% {
-      background: linear-gradient(to bottom right, var(--primarycolor), var(--fifthcolor));
+      background: var(--primarycolor);
     }
     50% {
-      background: linear-gradient(to bottom, var(--primarycolor), var(--fifthcolor), var(--primarycolor)); 
+        background: var(--fifthcolor);
     }
     100% {
-      background: linear-gradient(to bottom left, var(--primarycolor), var(--fifthcolor));
+      background: var(--fourthcolor);
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: var(--primarycolor);
+    }
+    50% {
+        background: var(--fifthcolor);
+    }
+    100% {
+      background: var(--fourthcolor);
     }
   }
   
-  @keyframes color-change-3x {
-    0% {
-      background: linear-gradient(to top left, var(--primarycolor), var(--fifthcolor));
-    }
-    50% {
-      background: linear-gradient(to top, var(--fifthcolor), var(--primarycolor), var(--primarycolor));
-    }
-    100% {
-      background: linear-gradient(to top right, var(--primarycolor), var(--fifthcolor));
-    }
-  }*/
-  
 .headerLogo {
     margin-right: 3%;
-    height: 8rem;
+    height: 5.8rem;
 }
 
 .headerTitle {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     align-self: center;
     color: var(--thirdcolor);
@@ -52,33 +53,32 @@
 }
 
 .headerPoint0 {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin-left: 2.5%;
     margin-top: 3%;
 }
 
 .headerPoint {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-left: 1.4%;
+    height: 2rem;
+    width: 2rem;
     margin-top: 2%;
 }
 
 .headerPoint1 {
-    height: 3rem;
-    width: 3rem;
-    margin-top: 5.2%;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-top: 4.3%;
 }
 
 .headerPoint2 {
-    height: 4rem;
-    width: 4rem;
+    height: 2.8rem;
+    width: 2.8rem;
     margin-top: 0.2%;
 }
 
 .headerPoint3 {
-    height: 5.5rem;
-    width: 5.5rem;
-    margin-top: 2.1%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-top: 2%;
 }

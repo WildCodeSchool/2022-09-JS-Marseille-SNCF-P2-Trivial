@@ -36,7 +36,7 @@ function Footer() {
                     <img className='logtiktok' src={image5} alt="logo tiktok" />
                     <p className='Copyright'>Copyright2022.Tousdroitsréservés</p>
                         
-                </div>
+    </div>
              </footer>                   
         );
     }

@@ -8,7 +8,7 @@ const NavModal = ({setIsShowing}) =>   {
             <div className='modalContent'>
               Merci pour votre adhésion. 
               Vous allez recevoir un mail de confirmation.
-            </div><br />
+            </div>
             <button className='modalButton' onClick={() => setIsShowing(false)}>Fermer</button>
         </div>
     )

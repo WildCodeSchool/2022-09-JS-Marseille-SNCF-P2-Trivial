@@ -1,23 +1,23 @@
 .footcontent {
-    /*background-color: var(--fourthcolor);*/
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to top left, var(--gamecolor), var(--fourthcolor), var(--gamecolor));
-    border-radius: 20px;
-    font-size: small;
+    border-radius: 10px;
     color: var(--sixthcolor);
     font-weight: bold; 
-    height: 5rem;
+    height: 100%;
 }
 
 ul {
     display: flex;
     flex-direction:row;
-    font-size:14px ;
+    font-size: 0.6rem ;
     text-decoration: none;
     justify-content: center; 
 }
 
 a { 
-    font-size: 1.02rem;
+    font-size: 0.8rem;
     color: var(--sixthcolor);
     font-weight: bold;  
 }
@@ -25,7 +25,7 @@ a {
 .categories{
     display: flex;
     justify-content:space-around;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
 }
 
 .firstline li {
@@ -34,15 +34,10 @@ a {
     margin-top: 0.5em;
 }
 
-/*.secondline li {
-    margin-right: 2em;
-    list-style: none;
-}*/
-
 .Copyright {
-   margin-left: 77em;
+   margin-left: 3rem;
    color: var(--sixthcolor);
-   font-size: 11px; 
+   font-size: 0.5rem; 
 }
 
 /* reseaux sociaux*/ 
@@ -50,30 +45,37 @@ a {
 .imgsoc{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    width: 1.5em;
-    height: 1.5em;
-    margin-left: 1em;
+    justify-content: flex-end;
 }
 
 .logface{
-    margin-left:10em;
+    margin-left:0em;
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .loginst {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .loglink {
-    margin-right: 1em;
+    margin-right: 0.3em;
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .logtwit {
     margin-left: 0em;
     margin-right: 0em;
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .logtiktok{
-    margin-left: 1em;
+    margin-left: 0.3em;
+    width: 0.8rem;
+    height: 0.8rem;
 }

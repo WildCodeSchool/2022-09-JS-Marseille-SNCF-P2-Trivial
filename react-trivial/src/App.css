@@ -1,9 +1,10 @@
 * {
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     --primarycolor: #635a5a;
     --secondarycolor: #8ba017;
     --thirdcolor: #ebca8f;
-    --fourthcolor: #f4b118;
+    --fourthcolor: #e6a715;
     --fifthcolor: #b63810;
     --sixthcolor: #801b06;
     --seventhcolor: #377c2e;
@@ -13,7 +14,7 @@
 }
 
 header { grid-area: header; }
-nav { grid-area: nav; height: auto; }
+nav { grid-area: nav; }
 section { grid-area: section; }
 article { grid-area: article; }
 footer { grid-area: footer; }
@@ -22,11 +23,15 @@ footer { grid-area: footer; }
     background-color: var(--appcolor);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 0.8fr 6fr;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 1fr 4fr 0.5fr;
     grid-template-areas:
-    "header header header"
-    "nav section article"
-    "footer footer footer";
-    row-gap: 0.5%;
+    "header header"
+    "nav section"
+    "footer footer";
+    row-gap: 0.8%;
     margin: 0.2%;
+    height: 99vh;   
 }

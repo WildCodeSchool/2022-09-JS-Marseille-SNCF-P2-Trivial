@@ -1,59 +1,84 @@
 input {
-    height: 1.5rem;
+    align-self: center;
+    text-align: center;
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 6%;
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
 }
 
+#choice {
+    align-self: center;
+    font-size: 0.6rem;
+}
+
+::placeholder {
+    font-size: 0.6rem;
+}
+strong {
+    font-size: 0.9rem;
+}
+
+.myNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
 .myNav1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: auto;
-    min-height: 12rem;
+    text-align: center;
     background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 35%;
+}
+
+label {
+    margin-top: 3%;
+}
+
+#difficulties {
+    margin-top: 10%;
 }
 
 .myNav2 {
     margin-top: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: auto;
-    min-height: 18.6rem;
+    text-align: center;
     background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
-    border-radius: 20px;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
-}
-
-#difficulties {
-    margin-top: 3%;
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 65%;
 }
 
 .infosUser {
     display: flex;
     flex-direction: column;
-    text-align: center;
     margin-top: 4%;
 }
 
 .infosUser strong {
     color: var(--sixthcolor);
-    font-size:large;
 }
 
 .infosUser select {
-    height: 1.5rem;
-    width: auto;
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 8%;
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
 }
 
 .newsLetter {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin-top: 4%;
 }
 
@@ -66,30 +91,40 @@ input {
     margin-top: 10%;
 }
 
+.acceptCGU{
+    margin-top: 3%;
+}
+
 .acceptCGU a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .newsLetter label {
     color: #ffff;
-    font-size: small;
+    font-size: 0.6rem;
 }
 
 #cgu {
-    height: fit-content;
+    height: 0.6rem;
+}
+
+.newsLetter p {
+    margin-top: 4%;
+    font-size: 0.5rem;
 }
 
 .newsLetter p em {
-    flex-wrap: wrap;
     color: #ffff;
-    font-size: smaller;
+    font-size: 0.6rem;
 }
 
 .subscribe {
+    align-self: center;
     height: 1.8rem;
+    width: 5rem;
     border-radius: 5px;
     border: none;
-    margin-top: 14%;
+    margin-top: 16%;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
     box-shadow: 0px 10px 14px -7px;
@@ -97,12 +132,13 @@ input {
 
 .modalContent {
     color: var(--sixthcolor);
-    font-size: small;
+    font-size: 0.7rem;
     font-weight: 400;
     margin-top: 4%;
 }
 
 .modalButton {
+    font-size: 0.6rem;
     height: 1.2rem;
     border-radius: 5px;
     border: none;
