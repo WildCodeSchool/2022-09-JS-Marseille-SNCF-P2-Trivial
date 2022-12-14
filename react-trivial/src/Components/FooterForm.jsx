@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-export default function Footer({ setIsOpen }) {
+function FooterForm({ setIsOpen }) {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [comments, setComments] = React.useState("");
@@ -54,3 +54,4 @@ export default function Footer({ setIsOpen }) {
     </form>
   );
 }
+export default FooterForm;

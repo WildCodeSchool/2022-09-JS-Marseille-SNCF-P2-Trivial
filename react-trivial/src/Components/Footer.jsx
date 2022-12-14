@@ -8,17 +8,21 @@ import image5 from "../Images/tiktok2.png";
 import FooterForm from "./FooterForm";
 
 function Footer() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen);
+  const ShowModal = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="footcontent">
-      {isOpen && <FooterForm setIsOpen={setIsOpen} />}
+     
 
       <div className="categories">
         <a href="Accueil">Accueil</a>
         <a href="Categories">Catégories</a>
-        <a className="Contact" onClick={() => setIsOpen()} href="Contact">
+         {isOpen && <FooterForm setIsOpen={setIsOpen} />}
+        <a className="Contact" href="#" onClick={ShowModal}>
           Contact
         </a>
       </div>
