@@ -1,67 +1,85 @@
 input {
-    height: 1.5rem;
+    align-self: center;
+    text-align: center;
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 6%;
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
+}
 
+#choice {
+    align-self: center;
+    font-size: 0.6rem;
+}
+
+::placeholder {
+    font-size: 0.6rem;
+}
+strong {
+    font-size: 0.9rem;
+}
+
+.myNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .myNav1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap:wrap;
-    width: 13%;
-    height: 14rem;
+    text-align: center;
     background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
-    border-radius: 20px;
-    margin: 0.2%;
-    margin-top: 0.5%;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 35%;
 }
 
-.myNav2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 13%;
-    height: 22rem;
-    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
-    border-radius: 20px;
-    margin: 0.2%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
+label {
+    margin-top: 3%;
 }
 
 #difficulties {
-    margin-top: 6%;
+    margin-top: 10%;
+}
+
+.myNav2 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 65%;
 }
 
 .infosUser {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 18%;
+    margin-top: 4%;
 }
 
-.infosUser label {
+.infosUser strong {
     color: var(--sixthcolor);
-    font-size:large;
 }
 
 .infosUser select {
-    height: 1.5rem;
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 8%;
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
 }
 
 .newsLetter {
-    margin-top: 6%;
-    margin-bottom: 18%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
 }
 
 .newsLetter span {
@@ -69,46 +87,62 @@ input {
     font-size: larger;
 }
 
-.acceptCGU {
+.newsLetter input {
     margin-top: 10%;
 }
+
+.acceptCGU{
+    margin-top: 3%;
+}
+
+.acceptCGU a {
+    font-size: 0.7rem;
+}
+
 .newsLetter label {
     color: #ffff;
-    font-size: small;
+    font-size: 0.6rem;
 }
 
 #cgu {
-    height: fit-content;
+    height: 0.6rem;
+}
+
+.newsLetter p {
+    margin-top: 4%;
+    font-size: 0.5rem;
 }
 
 .newsLetter p em {
     color: #ffff;
-    font-size: smaller;
+    font-size: 0.6rem;
 }
 
 .subscribe {
+    align-self: center;
     height: 1.8rem;
+    width: 5rem;
     border-radius: 5px;
     border: none;
+    margin-top: 16%;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
-    margin-top: 6%;
     box-shadow: 0px 10px 14px -7px;
 }
 
 .modalContent {
     color: var(--sixthcolor);
-    font-size: medium;
-    font-weight: 500;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 4%;
 }
 
 .modalButton {
-    height: 1.4rem;
-    margin-top: 3%;
+    font-size: 0.6rem;
+    height: 1.2rem;
     border-radius: 5px;
     border: none;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
     box-shadow: 0px 10px 14px -7px;
-
 }

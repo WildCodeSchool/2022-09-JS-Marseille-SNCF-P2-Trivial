@@ -26,15 +26,12 @@ function Nav () {
             <nav className='myNav1'>
             <div className='infosUser'>
                 <label htmlFor="pseudo"><strong>Pseudo</strong></label>
-                    <br />
                 <input 
                 type='text' 
                 placeholder='Entrer votre pseudo' 
                 value={username} 
                 onChange={() => handleUser()}/>
-                    <br />
-                <label id='difficulties' htmlFor="difficulties"><strong>Niveau de difficulté</strong></label>
-                    <br />
+                <label id='difficulties' htmlFor="difficulties"><strong>Difficulté Quizz</strong></label>
                 <select name="choiceOfDifficulty" id="choice">
                     <option value disabled selected>---- Votre choix ----</option>
                     <option value="text">Facile</option>
@@ -51,17 +48,17 @@ function Nav () {
                 type="email" 
                 placeholder='Entrer votre email' 
                 value={usermail} 
-                onChange={() => handleMail()}/>
-                    <br /><br />
+                onChange={() => handleMail()}
+                required />
             <div className='acceptCGU'>
                 <input 
                 type="checkbox" 
                 id='cgu' 
-                name='cgu'/>
-                <label htmlFor='cgu'>Accepter nos <a href=''>CGU</a></label>
+                name='cgu'
+                required />
+                <label htmlFor='cgu'> Accepter nos <a href=''>CGU</a></label>
             </div>
                 <p><em>Service réservé aux personnes majeures et ayant la capacité juridique de contracter</em></p>
-                    <br />
                 {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' onClick={() => toggleModal()}>Je m'abonne</button>}
             </div>
             </nav>

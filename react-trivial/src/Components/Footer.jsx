@@ -22,7 +22,7 @@ function Footer() {
         <a href="Accueil">Accueil</a>
         <a href="Categories">Catégories</a>
          {isOpen && <FooterForm setIsOpen={setIsOpen} />}
-        <a className="Contact" href="#" onClick={ShowModal}>
+        <a className="Contact" href="#Contact" onClick={ShowModal}>
           Contact
         </a>
       </div>
