@@ -44,8 +44,8 @@ const Card = () => {
     getCategories();
   }, []);
 
-  const allcategories = [...categories, { id: 33, name: "Random Choice" }];
-  const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, 33];
+  const allcategories = [...categories, { id: "", name: "Random Choice" }];
+  const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
 
   return (
     <div className="containerCat">
@@ -56,7 +56,7 @@ const Card = () => {
         .filter((category) => id_categories.includes(category.id))
         .map((category) => (
           <div>
-            <CardList name={category.name} />
+            <CardList name={category.name} id={category.id} />
           </div>
         ))}
     </div>

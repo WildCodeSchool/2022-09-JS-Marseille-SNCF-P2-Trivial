@@ -2,8 +2,9 @@ import React from "react";
 import "./card.css";
 import imageAnimal from "../Images/imageAnimal.jpg";
 
-const CardList = ({ name }) => {
+const CardList = ({ name, id }) => {
   return (
+    <div className={id}>
     <div className="card">
       {/* <a href="test" target="_blank"> */}
       <div className="categoryImg">
@@ -13,6 +14,7 @@ const CardList = ({ name }) => {
       </div>
       <div className="categoryText">{name}</div>
       {/* </a> */}
+    </div>
     </div>
   );
 };
