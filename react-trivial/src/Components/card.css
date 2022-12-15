@@ -9,25 +9,8 @@
   --card-width: calc(var(--card-height) / 1.1);
 }
 
-.containerCat {
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* margin: 0.2; */
-  padding-top: 0rem;
-  padding-bottom: 2rem;
-  max-width: 670pt;
-  height: 100%;
-  background: linear-gradient(to right, var(--fourthcolor), var(--fifthcolor));
-  border-radius: 16px;
-  box-sizing: border-box;
-  z-index: 0;
-  position: relative;
-}
-
 .titleCategory {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: radial-gradient(var(--fourthcolor), var(--secondarycolor));
@@ -35,6 +18,23 @@
   -webkit-background-clip: text;
   color: transparent;
   font-size: 1.7em;
+}
+.containerCat {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  /* margin: 0.2; */
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  max-width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--fourthcolor), var(--fifthcolor));
+  border-radius: 16px;
+  box-sizing: border-box;
+  z-index: 0;
+  position: relative;
 }
 
 .card img {
@@ -44,7 +44,7 @@
   box-shadow: 1.5pt 1.5pt 1.5pt -1.5px #2f2f2f, 5px 5px 10px hsl(227deg 15% 76%),
     -2.5px -2.5px 5px hsl(230deg 67% 96% / 75%);
   border: 0.125pt solid #f0f2fc;
-  margin-top: 0;
+  /* margin-top: 0; */
   border-radius: 10px 10px 4px 4px;
   object-position: 50% 90%;
 }
@@ -68,13 +68,15 @@
   text-align: center;
   display: block;
   cursor: pointer;
-  font-family: "Source Code Pro", Helvetica, sans-serif;
+  font-family: "Source Code Pro", "Tangerine", Helvetica, sans-serif;
+  /* font-display: block; */
 }
 
 .card:hover:before,
 .card:hover:after {
   animation: none;
   opacity: 0;
+  cursor: pointer;
 }
 
 .card::before {
@@ -104,7 +106,7 @@
   z-index: -1;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   transform: scale(0.8);
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
@@ -127,15 +129,15 @@
   }
 }
 
-a {
+/* a {
   color: var(--fourtnlinkthcolor);
   text-decoration: none;
 
   margin-top: 2rem;
-}
+} */
 
 .categoryText {
-  margin: 5pt 6pt 17pt 6pt;
+  /* margin: 5pt 6pt 17pt 6pt; */
   font-size: 17.25pt;
   color: var(--thirdcolor);
   font-weight: bold;

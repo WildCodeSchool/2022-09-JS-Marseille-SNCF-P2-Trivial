@@ -30,21 +30,91 @@ const categories = [
 ];
 const id_categories = [11, 12, 15, 18, 20, 21, 22, 31];
 
-export default function Cardeux() {
+export default function Card() {
   return (
     <div className="containerCat">
       <div className="titleCategory">
         <h1>Chose a category</h1>
       </div>
       <div className="card">
-        <a href="test" target="_blank">
-          <div className="categoryImg">
-            <g-img>
-              <img src={image1} alt="" />
-            </g-img>
-          </div>
-          <div className="categoryText">Entertainment: Film</div>
-        </a>
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={image1} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
       </div>
     </div>
   );

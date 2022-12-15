@@ -13,7 +13,8 @@ const App = () => {
     <div className="App">
       <Header />
       <Nav />
-      <Game />
+      {/* <Game /> */}
+      <Card />
       <Footer/>
     </div>
   );
