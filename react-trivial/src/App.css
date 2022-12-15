@@ -43,6 +43,7 @@ footer {
     "nav section"
     "footer footer";
   row-gap: 0.8%;
+  column-gap: 0.6%;
   margin: 0.2%;
   height: 99vh;
 }

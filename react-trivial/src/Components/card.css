@@ -6,7 +6,7 @@
 
 :root {
   --card-height: 20vh;
-  --card-width: calc(var(--card-height) / 1.1);
+  --card-width: calc(var(--card-height) / 0.9);
 }
 
 .titleCategory {
@@ -20,12 +20,9 @@
   font-size: 1.7em;
 }
 .containerCat {
-  /* min-height: 100vh; */
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   justify-content: space-around;
-  /* margin: 0.2; */
   max-width: calc(var(--card-width) * 4);
   padding-top: 0rem;
   padding-bottom: 2rem;
@@ -35,12 +32,11 @@
 
 .card img {
   /* object-fit: cover; */
-  width: calc(var(--card-width) / 1.15);
+  width: calc(var(--card-width) / 1.3);
   height: calc(var(--card-height) / 1.4);
   box-shadow: 1.5pt 1.5pt 1.5pt -1.5px #2f2f2f, 5px 5px 10px hsl(227deg 15% 76%),
     -2.5px -2.5px 5px hsl(230deg 67% 96% / 75%);
   border: 0.125pt solid #f0f2fc;
-  /* margin-top: 0; */
   border-radius: 10px 10px 4px 4px;
   object-position: 50% 90%;
 }
@@ -53,7 +49,7 @@
   margin-top: 6pt;
 }
 .card {
-  margin-top: 2%;
+  margin-top: 5%;
   background: radial-gradient(var(--secondarycolor), var(--primarycolor));
   width: var(--card-width);
   height: var(--card-height);
@@ -65,8 +61,7 @@
   text-align: center;
   display: block;
   cursor: pointer;
-  font-family: "Source Code Pro", "Tangerine", Helvetica, sans-serif;
-  /* font-display: block; */
+  /* font-family: "Source Code Pro", "Tangerine", Helvetica, sans-serif; */
 }
 
 .card:hover:before,
@@ -112,7 +107,6 @@
   z-index: -1;
   height: 100%;
   width: 100%;
-  /* margin: 0 auto; */
   transform: scale(0.8);
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
@@ -135,16 +129,15 @@
   }
 }
 
-/* a {
-  color: var(--fourtnlinkthcolor);
-  text-decoration: none;
-
-  margin-top: 2rem;
-} */
-
 .categoryText {
-  /* margin: 5pt 6pt 17pt 6pt; */
   font-size: 12.25pt;
   color: var(--thirdcolor);
   font-weight: bold;
 }
+/**************************media query******************************************/
+
+@media only screen and (max-width: 700px) {
+  .titleCategory {
+    font-size: 4vw;
+  }
+} ;
