@@ -1,6 +1,6 @@
 import React from "react";
 import "./card.css";
-import image1 from "../Images/image1.jpg";
+import imageAnimal from "../Images/imageAnimal.jpg";
 
 const categories = [
   { id: 9, name: "General Knowledge" },
@@ -40,7 +40,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -50,7 +50,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -60,7 +60,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -70,7 +70,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -80,7 +80,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -90,7 +90,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -100,7 +100,7 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>
@@ -110,7 +110,17 @@ export default function Card() {
         {/* <a href="test" target="_blank"> */}
         <div className="categoryImg">
           <g-img>
-            <img src={image1} alt="" />
+            <img src={imageAnimal} alt="" />
+          </g-img>
+        </div>
+        <div className="categoryText">Entertainment: Film</div>
+        {/* </a> */}
+      </div>
+      <div className="card">
+        {/* <a href="test" target="_blank"> */}
+        <div className="categoryImg">
+          <g-img>
+            <img src={imageAnimal} alt="" />
           </g-img>
         </div>
         <div className="categoryText">Entertainment: Film</div>

@@ -1,8 +1,9 @@
 import React from "react";
-import image1 from "../Images/image1.jpg";
+// import imageAnimal from "../Images/imageAnimal.jpg";
 import "./Content.css";
+import Card from './Card';
 
 const Content = () => {
-  return <div className="content">nop</div>;
+  return <div className="content"><Card/></div>;
 };
 export default Content;

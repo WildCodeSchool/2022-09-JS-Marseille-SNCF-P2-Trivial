@@ -2,8 +2,7 @@ import React from 'react';
 import Header from './Components/Header';
 import Nav from './Components/Nav';
 import Content from './Components/Content';
-import Card from './Components/Card';
-import Game from './Components/Game';
+// import Game from './Components/Game';
 //import Container from './Components/Container';
 import Footer from './Components/Footer';
 import './App.css';
@@ -14,7 +13,8 @@ const App = () => {
       <Header />
       <Nav />
       {/* <Game /> */}
-      <Card />
+      {/* <Card /> */}
+      <Content />
       <Footer/>
     </div>
   );
