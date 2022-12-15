@@ -5,16 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <title>TRIVIAL Game | La Trivial Team</title>
+    
   </head>
   <body>
     <div id="root"></div>
-
-    <script>
-      let uri = "https://opentdb.com/api.php?amount=10&type=multiple";
-      let encoded = encodeURIComponent(uri);
-      let decoded = decodeURIComponent(encoded);
-
-      document.getElementById("root").innerHTML = encoded + decoded;
-    </script>
   </body>
 </html>
