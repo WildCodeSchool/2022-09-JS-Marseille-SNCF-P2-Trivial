@@ -10,16 +10,17 @@ const GameApi = ({
     incorrect_answers,
     }) => {
 
-      const questionHtml = `<div>${question}</div>`
+// encodage HTML 
+  const questionHtml = `<div>${question}</div>`
+// ------------
 
-  /*const [incorrectAnswers, setIncorrectAnswers] = useState([]);
-  const [oneAnswer, setOneAnswer] = useState('');
-  const getRandomAnswers = () => {
-    const randomAnswers = {incorrect_answers}[Math.floor(Math.random() * incorrect_answers.length)];
-    setOneAnswer(randomAnswers);
-   
-  };
- console.log(incorrectAnswers, 'LOG');*/
+// questions en position aléatoire 
+  //const [allAnswers, setAllAnswers] = useState([...incorrect_answers, correct_answer]); 
+  /*const getRandomNumbers = () => {
+      Math.floor(Math.random() * 5);
+  };*/
+  
+// ------------
 
       return (
 <section className='sectionGame'>
@@ -29,16 +30,16 @@ const GameApi = ({
     </div>
     <div className='gameContent'>
         <button className='reponse'>
-          <h2>{incorrect_answers?.[0]}</h2>
+          <h2>{}</h2>
         </button>
         <button className='reponse'>
-          <h2>{incorrect_answers?.[1]}</h2>
+          <h2>{}</h2>
         </button>
         <button className='reponse'>
-          <h2>{correct_answer}</h2>
+          <h2>{}</h2>
         </button>
         <button className='reponse'>
-          <h2>{incorrect_answers?.[2]}</h2>
+          <h2>{}</h2>
         </button>
     </div>
     </article>

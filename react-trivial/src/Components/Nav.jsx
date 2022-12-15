@@ -1,4 +1,4 @@
-import React, {createElement, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Nav.css';
 import NavModal from './NavModal'
 
@@ -19,6 +19,10 @@ function Nav () {
         setIsShowing(!isShowing);
     };
 
+    function handleSubmit(e){
+        e.preventDefault();
+    }
+
 
     return (
         <nav className='myNav'>
@@ -28,10 +32,12 @@ function Nav () {
                 <label htmlFor="pseudo"><strong>Pseudo</strong></label>
                 <input 
                 type='text' 
+                name='Pseudo'
+                id='Pseudo'
                 placeholder='Entrer votre pseudo' 
                 value={username} 
-                onChange={() => handleUser()}/>
-                <label id='difficulties' htmlFor="difficulties"><strong>Difficulté Quizz</strong></label>
+                onChange={handleUser}/>
+                <label id='difficulties' htmlFor="difficulties"><strong>Difficulté</strong></label>
                 <select name="choiceOfDifficulty" id="choice">
                     <option value disabled selected>---- Votre choix ----</option>
                     <option value="text">Facile</option>
@@ -42,13 +48,16 @@ function Nav () {
             </nav>
 
             <nav className='myNav2'>
-            <div className='newsLetter'>
+            <form className='newsLetter' onSubmit={handleSubmit}>
                 <span><p><strong>NewsLetter</strong></p></span>
+                <label htmlFor='email'></label>
                 <input 
                 type="email" 
+                name='email'
+                id='email'
                 placeholder='Entrer votre email' 
                 value={usermail} 
-                onChange={() => handleMail()}
+                onChange={handleMail}
                 required />
             <div className='acceptCGU'>
                 <input 
@@ -56,11 +65,11 @@ function Nav () {
                 id='cgu' 
                 name='cgu'
                 required />
-                <label htmlFor='cgu'> Accepter nos <a href=''>CGU</a></label>
+                <label htmlFor='cgu'> Accepter nos CGU</label>
             </div>
                 <p><em>Service réservé aux personnes majeures et ayant la capacité juridique de contracter</em></p>
-                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' onClick={() => toggleModal()}>Je m'abonne</button>}
-            </div>
+                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' type='submit' onClick={toggleModal}>Je m'abonne</button>}
+            </form>
             </nav>
 
         </nav>
