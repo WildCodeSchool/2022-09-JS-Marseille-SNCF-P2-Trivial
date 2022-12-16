@@ -4,8 +4,10 @@ import Nav from './Components/Nav';
 import Content from './Components/Content';
 // import Game from './Components/Game';
 //import Container from './Components/Container';
+import "./App.css";
+import Game from './Components/Game';
 import Footer from './Components/Footer';
-import './App.css';
+
 
 const App = () => {
   return (
@@ -18,6 +20,6 @@ const App = () => {
       <Footer/>
     </div>
   );
-}
+};
 
 export default App;
