@@ -33,39 +33,12 @@ const Categories = ({ categories = [] }) => {
   const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
 
   const categoriesFilter = allcategories?.filter((category) => {
-      //return category.id ===21 || category.id===22
+     
       return id_categories.includes(category.id)
-      //return categoriesFilter.includes(category.id);
+
     });
 
-  
-  //if (category.name === "Sports") {
-  //return category;
-  //}
-  //if (category.name === "Entertainment: Music") {
-  //return category;
-  //}
-  //if (category.name === "Entertainment: Video Games") {
-  //return category;
-  //}
-  //if (category.name === "Science: Computers") {
-  //return category;
-  //}
-  //if (category.name === "Entertainment: Film") {
-  //return category;
-  //}
-  //if (category.name === "Entertainment: Japanese Anime & Manga") {
-  ///return category;
-  // }
-  //if (category.name === "Mythology") {
-  //return category;
-  // }
-  //if (category.name === "Geography") {
-  //return category;
-  // }
-  //if (category.name === "") {
-  //return category;
-  // }
+
 
   console.log(categoriesFilter, "result");
   return (
