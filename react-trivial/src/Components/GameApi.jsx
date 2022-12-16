@@ -10,17 +10,34 @@ const GameApi = ({
     incorrect_answers,
     }) => {
 
-// encodage HTML 
-  const questionHtml = `<div>${question}</div>`
-// ------------
+const questionHtml = `<div>${question}</div>`
 
-// questions en position aléatoire 
-  //const [allAnswers, setAllAnswers] = useState([...incorrect_answers, correct_answer]); 
-  /*const getRandomNumbers = () => {
-      Math.floor(Math.random() * 5);
-  };*/
-  
-// ------------
+
+// correct and incorrect answers in the same array
+const allAnswers = incorrect_answers?.concat([correct_answer]);
+console.log(allAnswers, "là");
+
+const randomAllAnswers = allAnswers?.sort();
+console.log(randomAllAnswers, "bas");
+
+// click button answer
+const [isActive, setIsActive] = useState(false);
+const toggleClass = () => {
+  setIsActive(!isActive)
+}
+
+const [selectAnswer, setSelectAnswer] = useState("")
+const handleClick = (answer) => {
+  toggleClass()
+  setSelectAnswer(answer)
+  console.log(selectAnswer, "select")
+  if (answer === {correct_answer}) {
+alert ("gagné")
+  } else {
+    alert ("perdu")
+  }
+console.log(answer, "réponse")
+}
 
       return (
 <section className='sectionGame'>
@@ -29,23 +46,19 @@ const GameApi = ({
         <h2 dangerouslySetInnerHTML={{__html: question}}></h2>
     </div>
     <div className='gameContent'>
-        <button className='reponse'>
-          <h2>{}</h2>
+      {randomAllAnswers?.map((answer, index) => (
+        <>
+        <button key={index} className={isActive ? "buttonIsActive" : "button"}>
+          <h2 onClick={() =>handleClick(answer)}>{answer}</h2>
         </button>
-        <button className='reponse'>
-          <h2>{}</h2>
-        </button>
-        <button className='reponse'>
-          <h2>{}</h2>
-        </button>
-        <button className='reponse'>
-          <h2>{}</h2>
-        </button>
+        </>
+      ))
+      }
     </div>
     </article>
     <article className='counter'>
       <div className='categorySelect'>
-          <h1>Catégorie</h1>
+          <h1>Category</h1>
           <h2>{category}</h2>
       </div>
       <div className='counterQuestion'>
@@ -53,7 +66,7 @@ const GameApi = ({
           <h2>1/10</h2>
       </div>
       <div className='counterTime'>
-          <h1>Temps restant</h1>
+          <h1>Time left</h1>
           <h2><CounterTime /></h2>
       </div>
     </article>
