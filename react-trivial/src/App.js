@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './Components/Header';
 import Nav from './Components/Nav';
+import "./App.css";
 import Game from './Components/Game';
 import Footer from './Components/Footer';
-import './App.css';
+
 
 const App = () => {
   return (
@@ -14,6 +15,6 @@ const App = () => {
       <Footer/>
     </div>
   );
-}
+};
 
 export default App;
