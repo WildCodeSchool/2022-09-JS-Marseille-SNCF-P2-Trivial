@@ -30,6 +30,7 @@ import axios from "axios";
 //   { id: 32, name: "Entertainment: Cartoon & Animations" },
 // ];
 const Card = () => {
+  const [selectedCategory, setSelectedCategory] = useState();
   const [categories, setCategories] = useState([]);
 
   const getCategories = () => {
@@ -46,7 +47,13 @@ const Card = () => {
 
   const allcategories = [...categories, { id: "", name: "Random Choice" }];
   const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
-
+  const printCategoryId = (categoryId, categoryName) => {
+    setSelectedCategory([categoryId, categoryName]);
+    alert(
+      `Num (id) de la catégorie : ${categoryId} et le nom : ${categoryName}`
+    );
+    console.log(selectedCategory);
+  };
   return (
     <div className="containerCat">
       <div className="titleCategory">
@@ -55,8 +62,11 @@ const Card = () => {
       {allcategories
         .filter((category) => id_categories.includes(category.id))
         .map((category) => (
-          <div>
-            <CardList name={category.name} id={category.id} />
+          <div key={category.id}>
+            <CardList
+              name={category.name}
+              onClick={() => printCategoryId(category.id, category.name)}
+            />
           </div>
         ))}
     </div>
