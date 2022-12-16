@@ -26,12 +26,12 @@ const toggleClass = () => {
   setIsActive(!isActive)
 }
 
-const [selectAnswer, setSelectAnswer] = useState("")
+const [selectAnswer, setSelectAnswer] = useState("");
 const handleClick = (answer) => {
   toggleClass()
   setSelectAnswer(answer)
-  console.log(selectAnswer, "select")
-  if (answer === {correct_answer}) {
+
+  if (answer === correct_answer) {
 alert ("gagné")
   } else {
     alert ("perdu")
