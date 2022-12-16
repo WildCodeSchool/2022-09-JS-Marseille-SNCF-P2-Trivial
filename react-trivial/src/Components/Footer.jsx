@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import image1 from "../Images/facebook.png";
 import image2 from "../Images/instagram.png";
@@ -6,53 +6,47 @@ import image3 from "../Images/linkedin.png";
 import image4 from "../Images/twitter.png";
 import image5 from "../Images/tiktok2.png";
 import FooterForm from "./FooterForm";
+import Categories from "./Categories";
+import axios from "axios";
 
 function Footer() {
   const [isOpen, setIsOpen] = useState(false);
+  const [categories, setCategories] = useState([]);
 
-  const ShowModal = () => {
+
+  function ShowModal() {
     setIsOpen(!isOpen);
-  };
+  }
 
-  return (
-    <div className="footcontent">
+  const getCategories = () => {
+    axios
+      .get("https://opentdb.com/api_category.php")
+      .then((response) => response.data)
+      .then((data) => {
+        console.log(data, "dataFooter");
+        setCategories(data);
+      });
+  };
+  useEffect(() => {
+    getCategories();
+  }, []);
+
      
 
+  console.log(categories?.trivia_categories?.[12]?.name, "categories");
+  return (
+    <div className="footcontent">
       <div className="categories">
-        <a href="Accueil">Accueil</a>
-        <a href="Categories">Catégories</a>
-         {isOpen && <FooterForm setIsOpen={setIsOpen} />}
+        <a href="Home">Home</a>
+        <a href="Categories">Categories</a>
+        {isOpen && <FooterForm setIsOpen={setIsOpen} />}
         <a className="Contact" href="#Contact" onClick={ShowModal}>
           Contact
         </a>
       </div>
       <ul className="firstline">
         <li>
-          <a href="Sport">Sports</a>
-        </li>
-        <li>
-          <a href="Musique">Musique</a>
-        </li>
-        <li>
-          <a href="Jeux Videos">Jeux Videos</a>
-        </li>
-        <li>
-          <a href="Ordinateurs">Ordinateurs</a>
-        </li>
-        <li>
-          <a href="Geographie">Geographie</a>
-        </li>
-        <li>
-          <a href="Film">Film</a>
-        </li>
-        <li>
-          <a href="Manga">Manga</a>
-        </li>
-        <li>
-          <a href="Mythologie">Mythologie</a>
-        </li>
-        <li>
-          <a href="Choix Aleatoire">Choix Aléatoire</a>
+          <Categories categories={categories?.trivia_categories} />
         </li>
       </ul>
       <div className="imgsoc">
@@ -76,7 +70,7 @@ function Footer() {
           {" "}
           <img className="logtiktok" src={image5} alt="logo tiktok" />
         </a>
-        <p className="Copyright">Copyright2022.Tousdroitsréservés</p>
+        <p className="Copyright">Copyright2022.Allrightsreserved</p>
       </div>
     </div>
   );
