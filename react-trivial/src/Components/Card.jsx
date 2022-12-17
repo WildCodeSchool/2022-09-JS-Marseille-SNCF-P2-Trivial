@@ -30,8 +30,15 @@ import axios from "axios";
 //   { id: 32, name: "Entertainment: Cartoon & Animations" },
 // ];
 const Card = () => {
-  const [selectedCategory, setSelectedCategory] = useState();
+  const [selectedCategory, setSelectedCategory] = useState("");
+  useEffect(() => {
+    console.log("test : ", selectedCategory);
+  }, [selectedCategory]);
+
   const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    getCategories();
+  }, []);
 
   const getCategories = () => {
     axios
@@ -41,19 +48,16 @@ const Card = () => {
         setCategories(data.trivia_categories);
       });
   };
-  useEffect(() => {
-    getCategories();
-  }, []);
 
   const allcategories = [...categories, { id: "", name: "Random Choice" }];
   const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
-  const printCategoryId = (categoryId, categoryName) => {
-    setSelectedCategory([categoryId, categoryName]);
-    alert(
-      `Num (id) de la catégorie : ${categoryId} et le nom : ${categoryName}`
-    );
-    console.log(selectedCategory);
-  };
+
+  // const printCategoryId = (categoryId, categoryName) => {
+  //   setSelectedCategory([categoryId, categoryName]);
+  //   alert(
+  //     `Num (id) de la catégorie : ${categoryId} et le nom : ${categoryName}`
+  //   );
+  // };
   return (
     <div className="containerCat">
       <div className="titleCategory">
@@ -65,7 +69,7 @@ const Card = () => {
           <div key={category.id}>
             <CardList
               name={category.name}
-              onClick={() => printCategoryId(category.id, category.name)}
+              onClick={() => setSelectedCategory([category.id, category.name])}
             />
           </div>
         ))}

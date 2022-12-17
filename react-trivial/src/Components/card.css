@@ -5,8 +5,8 @@
 }
 
 :root {
-  --card-height: 20vh;
-  --card-width: calc(var(--card-height) / 0.9);
+  --cardCategoryContent-height: 20vh;
+  --cardCategoryContent-width: calc(var(--cardCategoryContent-height) / 0.9);
 }
 
 .titleCategory {
@@ -23,17 +23,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: calc(var(--card-width) * 4);
+  max-width: calc(var(--cardCategoryContent-width) * 4);
   padding-top: 0rem;
   padding-bottom: 2rem;
   z-index: 0;
   position: relative;
 }
 
-.card img {
+.cardCategoryContent img {
   /* object-fit: cover; */
-  width: calc(var(--card-width) / 1.3);
-  height: calc(var(--card-height) / 1.4);
+  width: calc(var(--cardCategoryContent-width) / 1.3);
+  height: calc(var(--cardCategoryContent-height) / 1.4);
   box-shadow: 1.5pt 1.5pt 1.5pt -1.5px #2f2f2f, 5px 5px 10px hsl(227deg 15% 76%),
     -2.5px -2.5px 5px hsl(230deg 67% 96% / 75%);
   border: 0.125pt solid #f0f2fc;
@@ -41,18 +41,18 @@
   object-position: 50% 90%;
 }
 
-.categoryImg {
+.categoryContentImg {
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   margin-top: 6pt;
 }
-.card {
+.cardCategoryContent {
   margin-top: 5%;
   background: radial-gradient(var(--secondarycolor), var(--primarycolor));
-  width: var(--card-width);
-  height: var(--card-height);
+  width: var(--cardCategoryContent-width);
+  height: var(--cardCategoryContent-height);
   padding: 3px;
   position: relative;
   border-radius: 6px;
@@ -64,14 +64,14 @@
   /* font-family: "Source Code Pro", "Tangerine", Helvetica, sans-serif; */
 }
 
-.card:hover:before,
-.card:hover:after {
+.cardCategoryContent:hover:before,
+.cardCategoryContent:hover:after {
   animation: none;
   opacity: 0;
   cursor: pointer;
 }
 
-.card:hover {
+.cardCategoryContent:hover {
   background-image: linear-gradient(
     var(--rotate),
     var(--thirdcolor),
@@ -80,7 +80,7 @@
   );
 }
 
-.card::before {
+.cardCategoryContent::before {
   content: "";
   width: 104%;
   height: 102%;
@@ -98,17 +98,17 @@
   animation: spin 2.5s linear infinite;
 }
 
-.card::after {
+.cardCategoryContent::after {
   position: absolute;
   content: "";
-  top: calc(var(--card-height) / 6);
+  top: calc(var(--cardCategoryContent-height) / 6);
   left: 0;
   right: 0;
   z-index: -1;
   height: 100%;
   width: 100%;
   transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
+  filter: blur(calc(var(--cardCategoryContent-height) / 6));
   background-image: linear-gradient(
     var(--rotate),
     var(--thirdcolor),
@@ -129,7 +129,7 @@
   }
 }
 
-.categoryText {
+.categoryContentText {
   font-size: 12.25pt;
   color: var(--thirdcolor);
   font-weight: bold;

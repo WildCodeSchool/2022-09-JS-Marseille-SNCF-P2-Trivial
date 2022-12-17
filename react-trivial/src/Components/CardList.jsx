@@ -4,13 +4,13 @@ import imageAnimal from "../Images/imageAnimal.jpg";
 
 const CardList = ({ name, onClick }) => {
   return (
-    <div onClick={onClick} className="card">
-      <div className="categoryImg">
+    <div onClick={onClick} className="cardCategoryContent">
+      <div className="categoryContentImg">
         <g-img>
           <img src={imageAnimal} alt="" />
         </g-img>
       </div>
-      <div className="categoryText">{name}</div>
+      <div className="categoryContentText">{name}</div>
     </div>
   );
 };

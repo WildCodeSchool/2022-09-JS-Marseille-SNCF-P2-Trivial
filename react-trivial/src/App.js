@@ -12,12 +12,12 @@ import Footer from './Components/Footer';
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Nav />
+      {/* <Header /> */}
+      {/* <Nav /> */}
       {/* <Game /> */}
       {/* <Card /> */}
       <Content />
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
