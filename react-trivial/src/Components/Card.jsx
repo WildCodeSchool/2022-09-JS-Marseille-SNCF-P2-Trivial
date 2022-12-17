@@ -59,8 +59,8 @@ const Card = () => {
   //   );
   // };
   return (
-    <div className="containerCat">
-      <div className="titleCategory">
+    <div className="containerCategoryContent">
+      <div className="titleCategoryContent">
         <h1>Chose a category</h1>
       </div>
       {allcategories

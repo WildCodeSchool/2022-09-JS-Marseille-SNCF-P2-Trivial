@@ -14,7 +14,7 @@
     sans-serif;
 }
 
-/* header {
+header {
   grid-area: header;
 }
 nav {
@@ -46,4 +46,4 @@ footer {
   column-gap: 0.6%;
   margin: 0.2%;
   height: 99vh;
-} */
+}
