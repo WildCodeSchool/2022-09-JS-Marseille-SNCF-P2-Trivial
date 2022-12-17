@@ -13,7 +13,6 @@ function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   const [categories, setCategories] = useState([]);
 
-
   function ShowModal() {
     setIsOpen(!isOpen);
   }
@@ -31,12 +30,10 @@ function Footer() {
     getCategories();
   }, []);
 
-     
-
   console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
-    <div className="footcontent">
-      <div className="categories">
+    <div className="contentFoot">
+      <div className="linkFoot">
         <a href="Home">Home</a>
         <a href="Categories">Categories</a>
         {isOpen && <FooterForm setIsOpen={setIsOpen} />}
@@ -44,12 +41,13 @@ function Footer() {
           Contact
         </a>
       </div>
-      <ul className="firstline">
+      <ul className="firstlineFoot">
         <li>
           <Categories categories={categories?.trivia_categories} />
         </li>
       </ul>
-      <div className="imgsoc">
+
+      <div className="imgsocFoot">
         <a href="https://m.facebook.com/login/?locale=fr_FR">
           {" "}
           <img className="logface" src={image1} alt="logo facebook" />
@@ -70,7 +68,7 @@ function Footer() {
           {" "}
           <img className="logtiktok" src={image5} alt="logo tiktok" />
         </a>
-        <p className="Copyright">Copyright2022.Allrightsreserved</p>
+        <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
       </div>
     </div>
   );

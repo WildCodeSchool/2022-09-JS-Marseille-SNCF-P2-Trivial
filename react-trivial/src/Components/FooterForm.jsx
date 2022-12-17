@@ -12,12 +12,11 @@ function FooterForm({ setIsOpen }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <button className="closer" onClick={() => setIsOpen(false)}>
+    <form className="formFoot" onSubmit={handleSubmit}>
+      <button className="closerFoot" onClick={() => setIsOpen(false)}>
         Closed X
       </button>
       <h1>Trivial Game Contact</h1>
-
       <label>Name Firstname:</label>
       <input
         name="name"
@@ -31,6 +30,7 @@ function FooterForm({ setIsOpen }) {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        
       />
       <label>Comments:</label>
       <textarea
@@ -39,12 +39,10 @@ function FooterForm({ setIsOpen }) {
         value={comments}
         onChange={(e) => setComments(e.target.value)}
       />
-
       <label>
         <input
           name="acceptedTerms"
           type="checkbox"
-          //onChange={(e) => setAcceptedTerms(e.target.value)}
         />
         I accept the terms of use of Trivial Game Inc.
       </label>
