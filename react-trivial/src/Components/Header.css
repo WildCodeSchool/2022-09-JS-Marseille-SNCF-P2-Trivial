@@ -1,9 +1,9 @@
 .myHeader {
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-radius: 15px;
     background: linear-gradient(to top left, var(--primarycolor), var(--fifthcolor));
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
@@ -36,11 +36,11 @@
   
 .headerLogo {
     margin-right: 3%;
-    height: 5.8rem;
+    height: 90%;
 }
 
 .headerTitle {
-    font-size: 3.5rem;
+    font-size: 350%;
     font-weight: 600;
     align-self: center;
     color: var(--thirdcolor);
@@ -80,5 +80,5 @@
 .headerPoint3 {
     height: 4.5rem;
     width: 4.5rem;
-    margin-top: 2%;
+    margin-top: 1.8%;
 }

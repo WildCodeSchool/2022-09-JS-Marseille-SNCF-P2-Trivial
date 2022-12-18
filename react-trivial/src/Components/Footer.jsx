@@ -18,7 +18,7 @@ function Footer() {
     <div className="footcontent">
      
 
-      <div className="categories">
+      {/*<div className="categories">
         <a href="Accueil">Accueil</a>
         <a href="Categories">Catégories</a>
          {isOpen && <FooterForm setIsOpen={setIsOpen} />}
@@ -77,7 +77,7 @@ function Footer() {
           <img className="logtiktok" src={image5} alt="logo tiktok" />
         </a>
         <p className="Copyright">Copyright2022.Tousdroitsréservés</p>
-      </div>
+      </div>*/}
     </div>
   );
 }

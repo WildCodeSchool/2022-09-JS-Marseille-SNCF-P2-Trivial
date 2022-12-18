@@ -6,6 +6,7 @@
     color: var(--sixthcolor);
     font-weight: bold; 
     height: 100%;
+    width: 100%;
 }
 
 ul {
@@ -75,7 +76,7 @@ a {
 
 /*modal form*/
 
-  form {
+  /*form {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -191,4 +192,4 @@ margin-top: 1px;
 margin-left: px;
 padding: 0;
 width: 5%;
-  }
+  }*/
