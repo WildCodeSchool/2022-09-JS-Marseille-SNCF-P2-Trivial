@@ -34,15 +34,15 @@ function Nav () {
                 type='text' 
                 name='Pseudo'
                 id='Pseudo'
-                placeholder='Entrer votre pseudo' 
+                placeholder='Enter your pseudo' 
                 value={username} 
                 onChange={handleUser}/>
-                <label id='difficulties' htmlFor="difficulties"><strong>Difficulté</strong></label>
+                <label id='difficulties' htmlFor="difficulties"><strong>Difficulty</strong></label>
                 <select name="choiceOfDifficulty" id="choice">
-                    <option value disabled selected>---- Votre choix ----</option>
-                    <option value="text">Facile</option>
-                    <option value="text">Moyen</option>
-                    <option value="text">Difficile</option>
+                    <option value disabled selected>---- Your choice ----</option>
+                    <option value="text">Easy</option>
+                    <option value="text">Medium</option>
+                    <option value="text">Hard</option>
                 </select>
             </div>
             </nav>
@@ -55,7 +55,7 @@ function Nav () {
                 type="email" 
                 name='email'
                 id='email'
-                placeholder='Entrer votre email' 
+                placeholder='Enter your email' 
                 value={usermail} 
                 onChange={handleMail}
                 required />
@@ -65,10 +65,10 @@ function Nav () {
                 id='cgu' 
                 name='cgu'
                 required />
-                <label htmlFor='cgu'> Accepter nos CGU</label>
+                <label htmlFor='cgu'>Accept our terms and conditions</label>
             </div>
-                <p><em>Service réservé aux personnes majeures et ayant la capacité juridique de contracter</em></p>
-                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' type='submit' onClick={toggleModal}>Je m'abonne</button>}
+                <p><em>Service reserved for adults with the legal capacity to contract</em></p>
+                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' type='submit' onClick={toggleModal}>I subscribe</button>}
             </form>
             </nav>
 

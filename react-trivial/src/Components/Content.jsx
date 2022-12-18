@@ -4,6 +4,6 @@ import "./Content.css";
 import Card from './Card';
 
 const Content = () => {
-  return <div className="categoriesCardContent"><Card/></div>;
+  return <div className="content"><Card/></div>;
 };
 export default Content;

@@ -36,7 +36,7 @@
     row-gap: 25%;
 }
 
-.reponse {
+.button {
     border: none;
     min-height: 64%;
     width: 45%;
@@ -45,6 +45,16 @@
     border-radius: 12px;
     font-size: 0.8rem;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+}
+
+.buttonIsActive {
+    border: none;
+    min-height: 64%;
+    width: 45%;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    color: var(--sixthcolor);
+    border-radius: 12px;
+    font-size: 0.8rem;
 }
 
 .counter {

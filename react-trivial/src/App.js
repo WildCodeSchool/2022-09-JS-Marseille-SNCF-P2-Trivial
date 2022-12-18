@@ -3,7 +3,6 @@ import Header from './Components/Header';
 import Nav from './Components/Nav';
 import Content from './Components/Content';
 // import Game from './Components/Game';
-//import Container from './Components/Container';
 import "./App.css";
 import Game from './Components/Game';
 import Footer from './Components/Footer';

@@ -37,7 +37,7 @@ const Categories = ({ categories = [] }) => {
 
     });
 
-  console.log(categoriesFilter, "result");
+  //console.log(categoriesFilter, "result");
   return (
     <div className="categoriesFoot">
       {categoriesFilter?.map((category) => {

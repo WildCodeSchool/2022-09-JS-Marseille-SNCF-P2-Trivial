@@ -22,7 +22,7 @@ function Footer() {
       .get("https://opentdb.com/api_category.php")
       .then((response) => response.data)
       .then((data) => {
-        console.log(data, "dataFooter");
+        //console.log(data, "dataFooter");
         setCategories(data);
       });
   };
@@ -30,8 +30,9 @@ function Footer() {
     getCategories();
   }, []);
 
-  console.log(categories?.trivia_categories?.[12]?.name, "categories");
+  //console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
+    <footer>
     <div className="contentFoot">
       <div className="linkFoot">
         <a href="Home">Home</a>
@@ -71,6 +72,7 @@ function Footer() {
         <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
       </div>
     </div>
+    </footer>
   );
 }
 export default Footer;
