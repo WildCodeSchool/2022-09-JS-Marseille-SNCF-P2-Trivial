@@ -30,7 +30,7 @@ function Footer() {
     getCategories();
   }, []);
 
-  console.log(categories?.trivia_categories?.[12]?.name, "categories");
+  //console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
     <footer>
     <div className="contentFoot">

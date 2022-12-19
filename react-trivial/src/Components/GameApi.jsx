@@ -23,7 +23,10 @@ const questionHtml = `<div>${question}</div>`
 
 // correct and incorrect answers in the same array
 const allAnswers = incorrect_answers?.concat([correct_answer]);
+//console.log(allAnswers, "là");
+
 const randomAllAnswers = allAnswers?.sort();
+//console.log(randomAllAnswers, "bas");
 
 // click button answer
 const toggleClass = () => {
