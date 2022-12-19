@@ -20,6 +20,7 @@ header {
 nav {
   grid-area: nav;
 }
+/* La classe du composant pour le cibler */
 .content {
   grid-area: content;
 }
@@ -34,9 +35,11 @@ footer {
   background-color: var(--appcolor);
   border-radius: 20px;
   display: grid;
+  /* ??????????????? Pas de flex dans le grid ???????????????? */
   /* flex-wrap: wrap;
   box-sizing: content-box; */
   grid-template-columns: 12% 88%;
+  /* Casse les composants inutilement */
   /* grid-template-rows: 1fr 4fr 0.5fr; */
   grid-template-areas:
     "header header"
@@ -45,10 +48,6 @@ footer {
   row-gap: 0.8%;
   column-gap: 0.6%;
   margin: 0.2%;
-  /* height: 99vh; */
-  /* display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px; */
+  /* Déforme les composants */
+  height: 98vh;
 }

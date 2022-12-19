@@ -2,6 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./card.css";
 import CardList from "./CardList";
 import axios from "axios";
+import imageCategory_ from "../Images/ImagesCategories/imageCategory_.jpg";
+import imageCategory_11 from "../Images/ImagesCategories/imageCategory_11.jpg";
+import imageCategory_12 from "../Images/ImagesCategories/imageCategory_12.png";
+import imageCategory_15 from "../Images/ImagesCategories/imageCategory_15.jpg";
+import imageCategory_18 from "../Images/ImagesCategories/imageCategory_18.jpg";
+import imageCategory_20 from "../Images/ImagesCategories/imageCategory_20.jpg";
+import imageCategory_21 from "../Images/ImagesCategories/imageCategory_21.jpg";
+import imageCategory_22 from "../Images/ImagesCategories/imageCategory_22.jpg";
+import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 
 // const categories = [
 //   { id: 9, name: "General Knowledge" },
@@ -32,13 +41,15 @@ import axios from "axios";
 const Card = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
-    console.log("test : ", selectedCategory);
+    console.log(selectedCategory);
   }, [selectedCategory]);
 
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     getCategories();
   }, []);
+
+  // const [imageCategory, setImageCategory] = useState("imageCategory_");
 
   const getCategories = () => {
     axios
@@ -51,7 +62,17 @@ const Card = () => {
 
   const allcategories = [...categories, { id: "", name: "Random Choice" }];
   const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
-
+  const imageCatCard = [
+    { id: 11, image: imageCategory_11 },
+    { id: 12, image: imageCategory_12 },
+    { id: 15, image: imageCategory_15 },
+    { id: 18, image: imageCategory_18 },
+    { id: 20, image: imageCategory_20 },
+    { id: 21, image: imageCategory_21 },
+    { id: 22, image: imageCategory_22 },
+    { id: 31, image: imageCategory_31 },
+    { id: "", image: imageCategory_ },
+  ];
   // const printCategoryId = (categoryId, categoryName) => {
   //   setSelectedCategory([categoryId, categoryName]);
   //   alert(
@@ -69,6 +90,7 @@ const Card = () => {
           <div key={category.id}>
             <CardList
               name={category.name}
+              imageCategory= {imageCategory_12}
               onClick={() => setSelectedCategory([category.id, category.name])}
             />
           </div>
