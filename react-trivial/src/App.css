@@ -26,7 +26,7 @@ footer { grid-area: footer; }
     flex-wrap: wrap;
     box-sizing: content-box;
     grid-template-columns: 12% 88%;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 19% 70% 11%;
     grid-template-areas:
     "header header"
     "nav section"
@@ -37,3 +37,4 @@ footer { grid-area: footer; }
     height: 97vh;  
     width: 99vw;
 }
+

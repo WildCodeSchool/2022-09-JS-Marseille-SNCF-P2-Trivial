@@ -42,6 +42,7 @@
 .headerTitle {
     font-size: 350%;
     font-weight: 600;
+    text-align: center;
     align-self: center;
     color: var(--thirdcolor);
     letter-spacing: 0.28rem;
@@ -81,4 +82,20 @@
     height: 4.5rem;
     width: 4.5rem;
     margin-top: 1.8%;
+}
+
+@media screen and (max-width: 870px) {
+  .headerPoint3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headerPoint2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .headerPoint1 {
+    display: none;
+  }
 }

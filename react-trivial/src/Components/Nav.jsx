@@ -57,7 +57,7 @@ function Nav () {
 
             <nav className='nav2'>
             <form className='nav2Form' onSubmit={handleSubmit}>
-                <label htmlFor='email' className='nav2NewsLetter'><strong>NewsLetter</strong></label>
+                <label htmlFor='email' className='nav2NewsLetter'><strong>News Letter</strong></label>
                 <br/>
                 <input 
                 type='email' 
