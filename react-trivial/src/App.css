@@ -32,22 +32,21 @@ footer {
 }
 
 .App {
-  background-color: var(--appcolor);
-  border-radius: 20px;
-  display: grid;
-  /* ??????????????? Pas de flex dans le grid ???????????????? */
-  /* flex-wrap: wrap;
-  box-sizing: content-box; */
-  grid-template-columns: 12% 88%;
-  /* Casse les composants inutilement */
-  /* grid-template-rows: 1fr 4fr 0.5fr; */
-  grid-template-areas:
+    background-color: var(--appcolor);
+    border-radius: 20px;
+    display: grid;
+    box-sizing: content-box;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 19% 70% 11%;
+    grid-template-areas:
     "header header"
     "nav content"
     "footer footer";
-  row-gap: 0.8%;
-  column-gap: 0.6%;
-  margin: 0.2%;
-  /* Déforme les composants */
-  height: 98vh;
+    row-gap: 1%;
+    column-gap: 0.6%;
+    margin: 0.2%;
+      /* Déforme les composants */
+    height: 97vh;  
+    width: 99vw;
 }
+

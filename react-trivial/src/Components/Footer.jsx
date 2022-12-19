@@ -32,7 +32,6 @@ function Footer() {
 
   //console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
-    // Il faut <footer> pour l'affichage 
     <footer>
     <div className="contentFoot">
       <div className="linkFoot">

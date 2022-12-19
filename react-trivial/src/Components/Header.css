@@ -1,9 +1,9 @@
 .myHeader {
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-radius: 15px;
     background: linear-gradient(to top left, var(--primarycolor), var(--fifthcolor));
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
@@ -36,12 +36,13 @@
   
 .headerLogo {
     margin-right: 3%;
-    height: 5.8rem;
+    height: 90%;
 }
 
 .headerTitle {
-    font-size: 3.5rem;
+    font-size: 350%;
     font-weight: 600;
+    text-align: center;
     align-self: center;
     color: var(--thirdcolor);
     letter-spacing: 0.28rem;
@@ -80,5 +81,21 @@
 .headerPoint3 {
     height: 4.5rem;
     width: 4.5rem;
-    margin-top: 2%;
+    margin-top: 1.8%;
+}
+
+@media screen and (max-width: 870px) {
+  .headerPoint3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headerPoint2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .headerPoint1 {
+    display: none;
+  }
 }

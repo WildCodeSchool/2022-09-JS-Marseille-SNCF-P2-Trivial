@@ -41,7 +41,11 @@ import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 const Card = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
+
+
+
     console.log(selectedCategory);
+  
   }, [selectedCategory]);
 
   const [categories, setCategories] = useState([]);
