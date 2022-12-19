@@ -11,7 +11,7 @@ const getGame = () => {
     .get('https://opentdb.com/api.php?amount=10&type=multiple')
     .then((response) => response.data)
     .then((data) => {
-        console.log(data);
+        //console.log(data);
         setGame(data.results[0]);
     });
 };
@@ -20,7 +20,7 @@ useEffect(() => {
     getGame()
 }, []);
 
-console.log(game, "ici");
+//console.log(game, "ici");
 
     return (
         <section className='Game'>
