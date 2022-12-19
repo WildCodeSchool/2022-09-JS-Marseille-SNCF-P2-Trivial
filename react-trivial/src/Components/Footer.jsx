@@ -32,6 +32,7 @@ function Footer() {
 
   console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
+    <footer>
     <div className="contentFoot">
       <div className="linkFoot">
         <a href="Home">Home</a>
@@ -71,6 +72,7 @@ function Footer() {
         <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
       </div>
     </div>
+    </footer>
   );
 }
 export default Footer;
