@@ -12,45 +12,41 @@ function FooterForm({ setIsOpen }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <button className="closer" onClick={() => setIsOpen(false)}>
-        Fermer X
+    <form className="formFoot" onSubmit={handleSubmit}>
+      <button className="closerFoot" onClick={() => setIsOpen(false)}>
+        Closed X
       </button>
-      <h1>Contact Trivial Game</h1>
-
-      <label>Nom Prénom:</label>
+      <h1>Trivial Game Contact</h1>
+      <label>Name Firstname:</label>
       <input
         name="name"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-
       <label>Email:</label>
       <input
         name="email"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        
       />
-
-      <label>Commentaires:</label>
+      <label>Comments:</label>
       <textarea
         name="comments"
         type="text"
         value={comments}
         onChange={(e) => setComments(e.target.value)}
       />
-
       <label>
         <input
           name="acceptedTerms"
           type="checkbox"
-          //onChange={(e) => setAcceptedTerms(e.target.value)}
         />
-        J'accepte les termes utilisateurs de Trivial Game Inc.
+        I accept the terms of use of Trivial Game Inc.
       </label>
-      <button onClick={() => setIsOpen(false)}>Envoyer</button>
+      <button onClick={() => setIsOpen(false)}>Send</button>
     </form>
   );
 }
