@@ -25,50 +25,58 @@ function Nav () {
 
 
     return (
-        <nav className='myNav'>
+        <nav className='nav'>
 
-            <nav className='myNav1'>
-            <div className='infosUser'>
-                <label htmlFor="pseudo"><strong>Pseudo</strong></label>
+            <nav className='nav1'>
+            <form className='nav1User'>
+                <div className='nav1User1'>
+                <label htmlFor="Pseudo" className='nav1Pseudo'><strong>Pseudo</strong></label>
+                <br/>
                 <input 
                 type='text' 
                 name='Pseudo'
-                id='Pseudo'
-                placeholder='Entrer votre pseudo' 
+                id='nav1Pseudo'
+                placeholder='Enter your pseudo' 
                 value={username} 
-                onChange={handleUser}/>
-                <label id='difficulties' htmlFor="difficulties"><strong>Difficulté</strong></label>
-                <select name="choiceOfDifficulty" id="choice">
-                    <option value disabled selected>---- Votre choix ----</option>
-                    <option value="text">Facile</option>
-                    <option value="text">Moyen</option>
-                    <option value="text">Difficile</option>
+                onChange={handleUser}
+                required />
+                <br/>
+                </div>
+                <div className='nav1User2'>
+                <label htmlFor="difficulties" className='nav1Difficulties' ><strong>Difficulty</strong></label>
+                <br/>
+                <select name="choiceOfDifficulty" id="nav1Difficulties">
+                    <option id='nav1Choice' value disabled selected>---- Your choice ----</option>
+                    <option id='nav1Choice' value="text">Easy</option>
+                    <option id='nav1Choice' value="text">Medium</option>
+                    <option id='nav1Choice' value="text">Hard</option>
                 </select>
-            </div>
+                </div>
+            </form>
             </nav>
 
-            <nav className='myNav2'>
-            <form className='newsLetter' onSubmit={handleSubmit}>
-                <span><p><strong>NewsLetter</strong></p></span>
-                <label htmlFor='email'></label>
+            <nav className='nav2'>
+            <form className='nav2Form' onSubmit={handleSubmit}>
+                <label htmlFor='email' className='nav2NewsLetter'><strong>News Letter</strong></label>
+                <br/>
                 <input 
-                type="email" 
+                type='email' 
                 name='email'
-                id='email'
-                placeholder='Entrer votre email' 
+                id='nav2NewsLetter'
+                placeholder='Enter your email' 
                 value={usermail} 
                 onChange={handleMail}
                 required />
-            <div className='acceptCGU'>
+            <div className='nav2Cgu'>
                 <input 
                 type="checkbox" 
-                id='cgu' 
+                id='nav2Cgu' 
                 name='cgu'
                 required />
-                <label htmlFor='cgu'> Accepter nos CGU</label>
+                <label  className='nav2Accept'> Accept our terms and conditions</label>
             </div>
-                <p><em>Service réservé aux personnes majeures et ayant la capacité juridique de contracter</em></p>
-                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='subscribe' type='submit' onClick={toggleModal}>Je m'abonne</button>}
+                <p className='nav2Service'><em>Service reserved for adults with the legal capacity to contract</em></p>
+                {isShowing ? <NavModal setIsShowing={setIsShowing} /> : <button className='nav2Subscribe' type='submit' onClick={toggleModal}>I subscribe</button>}
             </form>
             </nav>
 

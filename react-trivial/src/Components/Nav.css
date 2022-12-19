@@ -1,148 +1,116 @@
-input {
-    align-self: center;
-    text-align: center;
-    height: 1.1rem;
-    width: 95%;
-    margin-top: 6%;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35)
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: auto; 
 }
 
-#choice {
-    align-self: center;
-    font-size: 0.6rem;
-}
-
-::placeholder {
-    font-size: 0.6rem;
-}
-strong {
-    font-size: 0.9rem;
-}
-
-.myNav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.myNav1 {
+.nav1 {
     display: flex;
     flex-direction: column;
     text-align: center;
     background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
     border-radius: 15px;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
-    height: 35%;
+    height: 40%;
 }
 
-label {
+.nav2 {
     margin-top: 3%;
-}
-
-#difficulties {
-    margin-top: 6%;
-}
-
-.myNav2 {
-    margin-top: 2%;
     display: flex;
     flex-direction: column;
     text-align: center;
     background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
     border-radius: 15px;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
-    height: 65%;
+    height: 60%;
 }
 
-.infosUser {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4%;
+.nav1User,
+.nav2Form {
+   margin: 12%;
+   margin-bottom: 6%;
 }
 
-.infosUser strong {
+.nav1User2 {
+    margin-top: 12%;
+}
+
+.nav1Pseudo,
+.nav1Difficulties,
+.nav2NewsLetter {
     color: var(--sixthcolor);
+    font-size: 1.2rem;
 }
 
-.infosUser select {
-    height: 1.1rem;
-    width: 95%;
-    margin-top: 8%;
+/* Input and Select */
+#nav1Pseudo,
+#nav1Difficulties,
+#nav2NewsLetter {
     border-radius: 5px;
     border: none;
     box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
-}
-
-.newsLetter {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4%;
-}
-
-.newsLetter span {
-    color: var(--sixthcolor);
-    font-size: larger;
-}
-
-.newsLetter input {
-    margin-top: 10%;
-}
-
-.acceptCGU{
-    margin-top: 3%;
-}
-
-.acceptCGU a {
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 12%;
     font-size: 0.7rem;
 }
 
-.newsLetter label {
+.nav2Cgu {
     color: #ffff;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    margin-top: 20%;
 }
 
-#cgu {
+#nav2Cgu {
     height: 0.6rem;
 }
 
-.newsLetter p {
-    margin-top: 4%;
-    font-size: 0.5rem;
-}
-
-.newsLetter p em {
+.nav2Service {
     color: #ffff;
     font-size: 0.6rem;
+    margin-top: 12%;
 }
 
-.subscribe {
+.nav2Subscribe {
     align-self: center;
     height: 1.8rem;
     width: 5rem;
     border-radius: 5px;
     border: none;
-    margin-top: 16%;
+    margin-top: 28%;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
     box-shadow: 0px 10px 14px -7px;
 }
 
-.modalContent {
+.navModalContent {
     color: var(--sixthcolor);
     font-size: 0.7rem;
-    font-weight: 400;
-    margin-top: 4%;
+    font-weight: 300;
+    margin-top: 10%;
 }
 
-.modalButton {
+.navModalButton {
     font-size: 0.6rem;
     height: 1.2rem;
+    width: 2rem;
     border-radius: 5px;
     border: none;
     background-color: var(--fourthcolor);
     color: var(--sixthcolor);
     box-shadow: 0px 10px 14px -7px;
 }
+
+@media screen and (min-width: 1024px) {
+    .nav {
+          
+    }
+    .nav1 {
+
+    }
+}
+
+
+    

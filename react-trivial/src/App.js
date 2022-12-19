@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import Header from "./Components/Header";
-import Nav from "./Components/Nav";
-//import Container from './Components/Container';
+import React from 'react';
+import Header from './Components/Header';
+import Nav from './Components/Nav';
 import "./App.css";
 import Game from './Components/Game';
 import Footer from './Components/Footer';
