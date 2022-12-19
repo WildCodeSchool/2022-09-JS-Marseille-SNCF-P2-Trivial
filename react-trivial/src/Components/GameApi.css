@@ -133,3 +133,13 @@
 h2 .timeEnd {
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 846px) {
+    .counterCategory,
+    .counterQuestion,
+    .counterTime {
+        width: 8.5rem;
+        min-height: 6rem;
+        height: auto;
+    }
+}

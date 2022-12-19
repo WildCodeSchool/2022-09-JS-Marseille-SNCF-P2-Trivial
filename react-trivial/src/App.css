@@ -23,7 +23,6 @@ footer { grid-area: footer; }
     background-color: var(--appcolor);
     border-radius: 20px;
     display: grid;
-    flex-wrap: wrap;
     box-sizing: content-box;
     grid-template-columns: 12% 88%;
     grid-template-rows: 19% 70% 11%;
@@ -38,3 +37,14 @@ footer { grid-area: footer; }
     width: 99vw;
 }
 
+@media screen and (max-width: 846px) {
+    .App {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    .App {
+    grid-template-columns: 0% 100%;
+    }
+}
