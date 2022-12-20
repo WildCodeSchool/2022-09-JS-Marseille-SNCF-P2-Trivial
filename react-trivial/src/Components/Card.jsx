@@ -12,6 +12,7 @@ import imageCategory_21 from "../Images/ImagesCategories/imageCategory_21.jpg";
 import imageCategory_22 from "../Images/ImagesCategories/imageCategory_22.jpg";
 import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 
+//********************* category query data model ***************************/
 // const categories = [
 //   { id: 9, name: "General Knowledge" },
 //   { id: 10, name: "Entertainment: Books" },
@@ -41,11 +42,7 @@ import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 const Card = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
-
-
-
     console.log(selectedCategory);
-  
   }, [selectedCategory]);
 
   const [categories, setCategories] = useState([]);
@@ -53,7 +50,7 @@ const Card = () => {
     getCategories();
   }, []);
 
-  // const [imageCategory, setImageCategory] = useState("imageCategory_");
+  // const [imageCategory, setImageCategory] = useState("");
 
   const getCategories = () => {
     axios
@@ -64,8 +61,6 @@ const Card = () => {
       });
   };
 
-  const allcategories = [...categories, { id: "", name: "Random Choice" }];
-  const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
   const imageCatCard = [
     { id: 11, image: imageCategory_11 },
     { id: 12, image: imageCategory_12 },
@@ -77,24 +72,23 @@ const Card = () => {
     { id: 31, image: imageCategory_31 },
     { id: "", image: imageCategory_ },
   ];
-  // const printCategoryId = (categoryId, categoryName) => {
-  //   setSelectedCategory([categoryId, categoryName]);
-  //   alert(
-  //     `Num (id) de la catégorie : ${categoryId} et le nom : ${categoryName}`
-  //   );
-  // };
+
+  const allcategories = [...categories, { id: "", name: "Random Choice" }];
+
+  const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
+
   return (
     <div className="containerCategoryContent">
       <div className="titleCategoryContent">
-        <h1>Chose a category</h1>
+        <h1>Choose a category</h1>
       </div>
       {allcategories
         .filter((category) => id_categories.includes(category.id))
-        .map((category) => (
+        .map((category, index) => (
           <div key={category.id}>
             <CardList
               name={category.name}
-              imageCategory= {imageCategory_12}
+              imageCategory={imageCatCard[index]?.image}
               onClick={() => setSelectedCategory([category.id, category.name])}
             />
           </div>

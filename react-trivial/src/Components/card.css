@@ -12,8 +12,13 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2vw;
+
 }
+
+.titleCategoryContent h1 {
+  font-size: 3vw;
+}
+
 .containerCategoryContent {
   --cardCategoryContent-height: calc(
     100vh / 6
