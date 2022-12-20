@@ -1,22 +1,22 @@
-import React from 'react';
-import Header from './Components/Header';
-import Nav from './Components/Nav';
-import Content from './Components/Content';
-// import Game from './Components/Game';
+import React, {useState} from "react";
+import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import Content from "./Components/Content";
+import Game from './Components/Game';
 import "./App.css";
-// import Game from './Components/Game';
-import Footer from './Components/Footer';
-
+import Footer from "./Components/Footer";
 
 const App = () => {
+  const [begin, setBegin] = useState(false);
   return (
     <div className="App">
       <Header />
       <Nav />
       {/* <Game /> */}
       {/* <Card /> */}
-      <Content />
-      <Footer/>
+      {begin ? <Game /> : <Content props={setBegin} />}
+      {/* <Content /> */}
+      <Footer />
     </div>
   );
 };

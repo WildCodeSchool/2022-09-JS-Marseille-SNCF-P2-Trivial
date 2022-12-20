@@ -40,9 +40,12 @@ import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 //   { id: 32, name: "Entertainment: Cartoon & Animations" },
 // ];
 const Card = () => {
+  // const beginGameChild = () => props(true);
+
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
     console.log(selectedCategory);
+    // beginGameChild();
   }, [selectedCategory]);
 
   const [categories, setCategories] = useState([]);
