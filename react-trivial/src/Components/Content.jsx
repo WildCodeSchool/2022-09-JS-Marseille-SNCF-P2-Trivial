@@ -1,5 +1,4 @@
 import React from "react";
-// import imageAnimal from "../Images/imageAnimal.jpg";
 import "./Content.css";
 import Card from "./Card";
 
