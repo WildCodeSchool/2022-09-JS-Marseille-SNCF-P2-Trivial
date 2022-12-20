@@ -1,0 +1,194 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.titleCategoryContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(var(--fourthcolor), var(--secondarycolor));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2vw;
+}
+.containerCategoryContent {
+  --cardCategoryContent-height: calc(
+    100vh / 6
+  ); /*  20vh --screenHeight: screen.height; */
+  --cardCategoryContent-width: calc(var(--cardCategoryContent-height) / 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: calc(var(--cardCategoryContent-width) * 4);
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  z-index: 0;
+  position: relative;
+}
+
+.cardCategoryContent img {
+  /* object-fit: cover; */
+  width: calc(var(--cardCategoryContent-width) / 1.3);
+  height: calc(var(--cardCategoryContent-height) / 1.4);
+  box-shadow: 1.5pt 1.5pt 1.5pt -1.5px #2f2f2f, 5px 5px 10px hsl(227deg 15% 76%),
+    -2.5px -2.5px 5px hsl(230deg 67% 96% / 75%);
+  border: 0.125pt solid #f0f2fc;
+  border-radius: 10px 10px 4px 4px;
+  object-position: 50% 90%;
+}
+
+.categoryContentImg {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6pt;
+}
+.cardCategoryContent {
+  margin-top: 5%;
+  background: radial-gradient(var(--secondarycolor), var(--primarycolor));
+  width: var(--cardCategoryContent-width);
+  height: var(--cardCategoryContent-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  /* font-family: "Source Code Pro", "Tangerine", Helvetica, sans-serif; */
+}
+
+.cardCategoryContent:hover:before,
+.cardCategoryContent:hover:after {
+  animation: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cardCategoryContent:hover {
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--thirdcolor),
+    var(--seventhcolor) 43%,
+    var(--fourthcolor)
+  );
+}
+
+.cardCategoryContent::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--thirdcolor),
+    var(--seventhcolor) 43%,
+    var(--fourthcolor)
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.cardCategoryContent::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--cardCategoryContent-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  filter: blur(calc(var(--cardCategoryContent-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--thirdcolor),
+    var(--seventhcolor) 43%,
+    var(--fourthcolor)
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.categoryContentText {
+  font-size: calc(var(--cardCategoryContent-height) / 12);
+  color: var(--sixthcolor);
+  font-weight: bold;
+}
+/**************************media query******************************************/
+/* 
+@media only screen and (max-width: 800px) {
+  .titleCategoryContent {
+    font-size: 4vw;
+  }
+  .containerCategoryContent {
+    --cardCategoryContent-height: 100px;
+    --cardCategoryContent-width: 200px;
+  }
+  .cardCategoryContent img {
+    display: none;
+  }
+  .categoryContentText {
+    font-size: large;
+  }
+} */
+
+@media all and (min-width: 516px) and (max-width: 800px) {
+  .titleCategoryContent {
+    font-size: 2vw;
+  }
+  .containerCategoryContent {
+    /* --cardCategoryContent-height: 100px;
+    --cardCategoryContent-width: 200px; */
+    --cardCategoryContent-height: calc((100vh * 0.2) / 2);
+    --cardCategoryContent-width: calc(var(--cardCategoryContent-height) / 0.9);
+  }
+  
+  .cardCategoryContent {
+ justify-items: center;
+  }
+
+  .cardCategoryContent img {
+    display: none;
+  }
+  .categoryContentText {
+    font-size:1.6vh;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 515px) {
+  .titleCategoryContent {
+    font-size: 1vh;
+  }
+  .containerCategoryContent {
+    --cardCategoryContent-height: calc((100vh * 0.2) / 3.9);
+    --cardCategoryContent-width: calc(var(--cardCategoryContent-height) / 0.2);
+  }
+  .cardCategoryContent img {
+    display: none;
+  }
+  .categoryContentText {
+    font-size: large;
+  }
+  .content {
+    min-width: 260px;
+  }
+} ;

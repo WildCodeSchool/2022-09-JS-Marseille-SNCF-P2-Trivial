@@ -1,0 +1,116 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: auto; 
+}
+
+.nav1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background : linear-gradient(to bottom right, var(--secondarycolor), var(--thirdcolor));
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 40%;
+}
+
+.nav2 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 60%;
+}
+
+.nav1User,
+.nav2Form {
+   margin: 12%;
+   margin-bottom: 6%;
+}
+
+.nav1User2 {
+    margin-top: 12%;
+}
+
+.nav1Pseudo,
+.nav1Difficulties,
+.nav2NewsLetter {
+    color: var(--sixthcolor);
+    font-size: 1.2rem;
+}
+
+/* Input and Select */
+#nav1Pseudo,
+#nav1Difficulties,
+#nav2NewsLetter {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    height: 1.1rem;
+    width: 95%;
+    margin-top: 12%;
+    font-size: 0.7rem;
+}
+
+.nav2Cgu {
+    color: #ffff;
+    font-size: 0.7rem;
+    margin-top: 20%;
+}
+
+#nav2Cgu {
+    height: 0.6rem;
+}
+
+.nav2Service {
+    color: #ffff;
+    font-size: 0.6rem;
+    margin-top: 12%;
+}
+
+.nav2Subscribe {
+    align-self: center;
+    height: 1.8rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 28%;
+    background-color: var(--fourthcolor);
+    color: var(--sixthcolor);
+    box-shadow: 0px 10px 14px -7px;
+}
+
+.navModalContent {
+    color: var(--sixthcolor);
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+.navModalButton {
+    font-size: 0.6rem;
+    height: 1.2rem;
+    width: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fourthcolor);
+    color: var(--sixthcolor);
+    box-shadow: 0px 10px 14px -7px;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+          
+    }
+    .nav1 {
+
+    }
+}
+
+
+    

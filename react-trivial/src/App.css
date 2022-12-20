@@ -1,38 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  --primarycolor: #635a5a;
+  --secondarycolor: #8ba017;
+  --thirdcolor: #ebca8f;
+  --fourthcolor: #e6a715;
+  --fifthcolor: #b63810;
+  --sixthcolor: #801b06;
+  --seventhcolor: #377c2e;
+  --appcolor: rgb(255, 253, 245);
+  --gamecolor: #f9e7cd;
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+/* La classe du composant pour le cibler */
+.content {
+  grid-area: content;
+}
+/* article {
+  grid-area: article;
+} */
+footer {
+  grid-area: footer;
+}
+
 .App {
-  text-align: center;
+    background-color: var(--appcolor);
+    border-radius: 20px;
+    display: grid;
+    box-sizing: content-box;
+    grid-template-columns: 12% 88%;
+    grid-template-rows: 19% 70% 11%;
+    grid-template-areas:
+    "header header"
+    "nav content"
+    "footer footer";
+    row-gap: 1%;
+    column-gap: 0.6%;
+    margin: 0.2%;
+      /* Déforme les composants */
+    height: 97vh;  
+    width: 99vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

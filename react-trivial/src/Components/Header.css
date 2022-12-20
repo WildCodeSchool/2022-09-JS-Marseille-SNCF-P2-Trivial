@@ -1,0 +1,101 @@
+.myHeader {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    flex-wrap: nowrap;
+    border-radius: 15px;
+    background: linear-gradient(to top left, var(--primarycolor), var(--fifthcolor));
+    box-shadow: 12px 12px 20px -8px rgba(0, 0, 0, 0.35);
+    -webkit-animation: color-change-3x 6s linear infinite alternate both;
+    animation: color-change-3x 6s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-3x {
+    0% {
+      background: var(--primarycolor);
+    }
+    50% {
+        background: var(--fifthcolor);
+    }
+    100% {
+      background: var(--fourthcolor);
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: var(--primarycolor);
+    }
+    50% {
+        background: var(--fifthcolor);
+    }
+    100% {
+      background: var(--fourthcolor);
+    }
+  }
+  
+.headerLogo {
+    margin-right: 3%;
+    height: 90%;
+}
+
+.headerTitle {
+    font-size: 350%;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    color: var(--thirdcolor);
+    letter-spacing: 0.28rem;
+    text-shadow: 3px 1px 1px var(--sixthcolor), 2px 2px 1px var(--fourthcolor), 4px 2px 1px var(--sixthcolor),
+    3px 3px 1px var(--fourthcolor), 5px 3px 1px var(--sixthcolor), 4px 4px 1px var(--fourthcolor),
+    6px 4px 1px var(--sixthcolor), 5px 5px 1px var(--fourthcolor), 7px 5px 1px var(--sixthcolor),
+    6px 6px 1px var(--fourthcolor), 8px 6px 1px var(--sixthcolor), 7px 7px 1px var(--fourthcolor),
+    9px 7px 1px var(--sixthcolor);
+}
+
+.headerPoint0 {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 2.5%;
+    margin-top: 3%;
+}
+
+.headerPoint {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 2%;
+}
+
+.headerPoint1 {
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-top: 4.3%;
+}
+
+.headerPoint2 {
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-top: 0.2%;
+}
+
+.headerPoint3 {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-top: 1.8%;
+}
+
+@media screen and (max-width: 870px) {
+  .headerPoint3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headerPoint2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .headerPoint1 {
+    display: none;
+  }
+}
