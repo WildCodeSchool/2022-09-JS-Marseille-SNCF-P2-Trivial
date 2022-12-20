@@ -4,12 +4,11 @@ import './Nav.css';
 const NavModal = ({setIsShowing}) =>   {
 
     return (
-        <div className='modal'>
-            <div className='modalContent'>
-              Merci pour votre adhésion. 
-              Vous allez recevoir un mail de confirmation.
+        <div className='navModal'>
+            <div className='navModalContent'>
+            Thanks for joining. You will receive a confirmation email.
             </div>
-            <button className='modalButton' onClick={() => setIsShowing(false)}>Fermer</button>
+            <button className='navModalButton' onClick={() => setIsShowing(false)}>Close</button>
         </div>
     )
 
