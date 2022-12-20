@@ -99,3 +99,21 @@
     display: none;
   }
 }
+@media screen and (max-width: 478px) {
+  .headerPoint0 {
+    display: none;
+  }
+}
+@media screen and (max-width: 432px) {
+  .headerPoint {
+    display: none;
+  }
+}
+@media screen and (max-width: 408px) {
+  .headerLogo {
+    margin-right: 0%;
+    margin-top: 8%;
+    height: 50%;
+    width: 20%;
+  }
+}
