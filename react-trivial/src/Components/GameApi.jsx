@@ -9,13 +9,20 @@ const GameApi = ({
     question,
     correct_answer,
     incorrect_answers,
-    selectedCategory
+    selectedCategory,
+    game,
+    setGame,
+    getGame
     }) => {
 
 const [correctAnswers, setCorrectAnswers] = useState("");
 const [selectAnswer, setSelectAnswer] = useState("");
 const [currentQuestion, setCurrentQuestion] = useState(0);
 const [isActive, setIsActive] = useState(false);
+
+useEffect(() => {
+  setCurrentQuestion(currentQuestion + 1)
+}, []);
 
 const questionHtml = `<div>${question}</div>`
 
@@ -29,22 +36,19 @@ const toggleClass = () => {
 const handleSelect = (answer) => {
   setSelectAnswer(answer)
   toggleClass()
-  console.log("réponse :",selectAnswer)
   if (answer === correct_answer) {    
     setCorrectAnswers(correct_answer)
   } else if (incorrect_answers.includes(answer)) {
 };
+}
 
-const nextQuestion = (question) => {
-  if ((secs === 0) || handleSelect(answer)) {
-// ???????
+const nextQuestion = () => {
+  if ((secs === 0) || handleSelect()) {
+    return (game.question)
   }
 }
-console.log("Question :", currentQuestion)
-}
 
-// return in JSX
-      return (
+return (
 <section className='gameSection'>
     <article className='game'>
     <div className='gameHeader'>
@@ -70,7 +74,7 @@ console.log("Question :", currentQuestion)
       </div>
       <div className='counterQuestion'>
           <h1>Question</h1>
-          <h2>1/10</h2>
+          <h2>{currentQuestion}/10</h2>
       </div>
       <div className='counterTime'>
           <h1>Time left</h1>

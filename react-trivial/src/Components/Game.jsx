@@ -19,23 +19,12 @@ useEffect(() => {
     getGame()
 }, []);
 
-/*const getQuestions = () => {
-    axios
-    .get('https://opentdb.com/api.php?amount=10&difficulty=${selectedCategory.name}&type=multiple')
-    .then((response) => response.data)
-    .then((data) => {
-        console.log(data, "question with category")
-        setQuestions(data.question);
-    });
-}
-
-useEffect(() => {
-    getQuestions()
-}, [])*/
-
     return (
         <section className='Game'>
             <GameApi
+                game={game}
+                setGame={setGame}
+                getGame={getGame}
                 category={game.category}
                 difficulty={game.difficulty}
                 question={game.question}

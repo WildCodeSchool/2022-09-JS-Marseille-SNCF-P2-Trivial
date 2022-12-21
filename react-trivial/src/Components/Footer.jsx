@@ -34,7 +34,7 @@ function Footer() {
   return (
     <footer>
     <div className="contentFoot">
-      <div className="linkFoot">
+     {/* <div className="linkFoot">
         <a href="Home">Home</a>
         <a href="Categories">Categories</a>
         {isOpen && <FooterForm setIsOpen={setIsOpen} />}
@@ -70,8 +70,8 @@ function Footer() {
           <img className="logtiktok" src={image5} alt="logo tiktok" />
         </a>
         <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
+  </div>*/}
   </div>
-    </div>
     </footer>
   );
 }
