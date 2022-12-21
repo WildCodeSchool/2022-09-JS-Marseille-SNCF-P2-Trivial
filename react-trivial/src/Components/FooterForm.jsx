@@ -39,10 +39,10 @@ function FooterForm({ setIsOpen }) {
         value={comments}
         onChange={(e) => setComments(e.target.value)}
       />
-      <label id="label4"></label>
+        <label id="label4"></label>
         <input id="input4" name="acceptedTerms" type="checkbox" />I accept the
         terms of use of Trivial Game Inc.
-      <button id="button" onClick={() => setIsOpen(false)}>Send</button>
+        <button id="button" onClick={() => setIsOpen(false)}>Send</button>
     </form>
   );
 }

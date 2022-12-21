@@ -22,15 +22,13 @@ function Footer() {
       .get("https://opentdb.com/api_category.php")
       .then((response) => response.data)
       .then((data) => {
-        //console.log(data, "dataFooter");
-        setCategories(data);
+      setCategories(data);
       });
   };
   useEffect(() => {
     getCategories();
   }, []);
 
-  //console.log(categories?.trivia_categories?.[12]?.name, "categories");
   return (
     <footer>
     <div className="contentFoot">
@@ -43,11 +41,10 @@ function Footer() {
         </a>
       </div>
       <ul className="firstlineFoot">
-        <li>
+          <li>
           <Categories categories={categories?.trivia_categories} />
         </li>
       </ul>
-
       <div className="imgsocFoot">
         <a href="https://m.facebook.com/login/?locale=fr_FR">
           {" "}
