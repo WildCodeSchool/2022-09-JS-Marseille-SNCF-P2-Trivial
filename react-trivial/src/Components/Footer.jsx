@@ -22,7 +22,7 @@ function Footer() {
       .get("https://opentdb.com/api_category.php")
       .then((response) => response.data)
       .then((data) => {
-      setCategories(data);
+        setCategories(data);
       });
   };
   useEffect(() => {
@@ -31,44 +31,44 @@ function Footer() {
 
   return (
     <footer>
-    <div className="contentFoot">
-     {/* <div className="linkFoot">
-        <a href="Home">Home</a>
-        <a href="Categories">Categories</a>
-        {isOpen && <FooterForm setIsOpen={setIsOpen} />}
-        <a className="Contact" href="#Contact" onClick={ShowModal}>
-          Contact
-        </a>
-      </div>
-      <ul className="firstlineFoot">
+      <div className="contentFoot">
+        <div className="linkFoot">
+          <a href="Home">Home</a>
+          <a href="Categories">Categories</a>
+          {isOpen && <FooterForm setIsOpen={setIsOpen} />}
+          <a className="Contact" href="#Contact" onClick={ShowModal}>
+            Contact
+          </a>
+        </div>
+        <ul className="firstlineFoot">
           <li>
-          <Categories categories={categories?.trivia_categories} />
-        </li>
-      </ul>
-      <div className="imgsocFoot">
-        <a href="https://m.facebook.com/login/?locale=fr_FR">
-          {" "}
-          <img className="logface" src={image1} alt="logo facebook" />
-        </a>
-        <a href="https://www.instagram.com/?hl=fr">
-          {" "}
-          <img className="loginst" src={image2} alt="logo instagram" />
-        </a>
-        <a href="https://www.linkedin.com/feed/">
-          {" "}
-          <img className="loglink" src={image3} alt="logo linkedin" />
-        </a>
-        <a href="https://twitter.com/?lang=fr">
-          {" "}
-          <img className="logtwit" src={image4} alt="logo twitter" />
-        </a>
-        <a href="https://www.tiktok.com/?lang=fr">
-          {" "}
-          <img className="logtiktok" src={image5} alt="logo tiktok" />
-        </a>
-        <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
-  </div>*/}
-  </div>
+            <Categories categories={categories?.trivia_categories} />
+          </li>
+        </ul>
+        <div className="imgsocFoot">
+          <a href="https://m.facebook.com/login/?locale=fr_FR">
+            {" "}
+            <img className="logface" src={image1} alt="logo facebook" />
+          </a>
+          <a href="https://www.instagram.com/?hl=fr">
+            {" "}
+            <img className="loginst" src={image2} alt="logo instagram" />
+          </a>
+          <a href="https://www.linkedin.com/feed/">
+            {" "}
+            <img className="loglink" src={image3} alt="logo linkedin" />
+          </a>
+          <a href="https://twitter.com/?lang=fr">
+            {" "}
+            <img className="logtwit" src={image4} alt="logo twitter" />
+          </a>
+          <a href="https://www.tiktok.com/?lang=fr">
+            {" "}
+            <img className="logtiktok" src={image5} alt="logo tiktok" />
+          </a>
+          <p className="CopyrightFoot">Copyright2022.Allrightsreserved</p>
+        </div>
+      </div>
     </footer>
   );
 }

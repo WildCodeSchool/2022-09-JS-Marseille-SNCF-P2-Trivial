@@ -1,16 +1,15 @@
 import React from "react";
-// import imageAnimal from "../Images/imageAnimal.jpg";
 import "./Content.css";
-import Card from './Card';
+import Card from "./Card";
 
-const Content = () => {
-  return <div className="content"><Card/></div>;
+
+const Content = ({ setBegin }) => {
+  return (
+    <div className="content">
+      {/* property and parameter for switching */}
+      <Card setBegin={setBegin} />
+    </div>
+  );
 };
-
-// render() {
-//   if (this.state.edit) return <EditForm />
-//   return <Display />
-// }
-
 
 export default Content;
