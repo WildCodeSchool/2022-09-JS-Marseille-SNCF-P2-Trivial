@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 const CounterTime = () => {
-    const [secs, setSecs] = useState(5);
+    const [secs, setSecs] = useState(60);
 
     useEffect(() => {
         let sampleInterval = setInterval(() => {

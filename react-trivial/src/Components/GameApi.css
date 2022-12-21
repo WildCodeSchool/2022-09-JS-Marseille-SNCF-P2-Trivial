@@ -25,8 +25,9 @@
     justify-content: center;
     text-align: center;
     color: var(--sixthcolor);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     height: 30%;
+    margin-top: 1%;
 }
 
 .gameContent {
@@ -54,9 +55,32 @@
 
 .buttonIsActive {
     border: none;
+    height: 28%;
+    width: 43%;
+    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    color: var(--sixthcolor);
+    border-radius: 12px;
+}
+
+.correct {
+    border: none;
     height: 30%;
     width: 45%;
-    background : linear-gradient(to bottom right, var(--thirdcolor), var(--secondarycolor));
+    background : var(--secondarycolor);
+    color: var(--sixthcolor);
+    border-radius: 12px;
+}
+
+.correct h2 {
+    font-size: 1.6rem;
+}
+
+.wrong {
+    border: none;
+    height: 30%;
+    width: 45%;
+    background : var(--fifthcolor);
+    opacity: 80%;
     color: var(--sixthcolor);
     border-radius: 12px;
 }
@@ -132,4 +156,50 @@
 
 h2 .timeEnd {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 846px) {
+    .counterCategory,
+    .counterQuestion,
+    .counterTime {
+        width: 8.5rem;
+        min-height: 6rem;
+        height: auto;
+    }
+}
+@media screen and (max-width: 492px) {
+    .game {
+        width: auto;
+    }
+    .gameHeader {
+        font-size: 1rem;
+    }
+    .gameContent {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: auto;
+        row-gap: 1%;
+        margin-bottom: 2%;
+    }
+    .button,
+    .buttonIsActive,
+    .correct,
+    .wrong {
+        min-height: 20%;
+        height: auto;
+        width: 90%;
+    }
+    .counterCategory,
+    .counterQuestion,
+    .counterTime {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .gameHeader {
+        margin-top: 4%;
+    }
 }

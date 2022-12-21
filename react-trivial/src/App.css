@@ -20,13 +20,12 @@ header {
 nav {
   grid-area: nav;
 }
-/* La classe du composant pour le cibler */
-.content {
+content {
   grid-area: content;
 }
-/* article {
-  grid-area: article;
-} */
+game {
+  grid-area: game;
+}
 footer {
   grid-area: footer;
 }
@@ -42,22 +41,21 @@ footer {
     "header header"
     "nav content"
     "footer footer";
-  row-gap: 1%;
-  column-gap: 0.6%;
-  margin: 0.2%;
-  /* Déforme les composants */
-  height: 97vh;
-  width: 99vw;
+    row-gap: 1%;
+    column-gap: 0.6%;
+    margin: 0.2%;
+    height: 97vh;  
+    width: 99vw;
 }
 
-/* @media screen and (max-width: 846px) {
-  .App {
-    grid-template-columns: 15% 85%;
-  }
-} */
+@media screen and (max-width: 846px) {
+    .App {
+        grid-template-columns: 15% 85%;
+    }
+}
 
 @media screen and (max-width: 642px) {
-  .App {
-    grid-template-columns: 0% 100%;
-  }
+    .App {
+      grid-template-columns: 100%;
+    }
 }
