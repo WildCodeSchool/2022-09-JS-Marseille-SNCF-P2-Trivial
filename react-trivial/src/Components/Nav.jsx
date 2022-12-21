@@ -46,7 +46,7 @@ function Nav () {
                 <label htmlFor="difficulties" className='nav1Difficulties' ><strong>Difficulty</strong></label>
                 <br/>
                 <select name="choiceOfDifficulty" id="nav1Difficulties">
-                    <option id='nav1Choice' value disabled selected>---- Your choice ----</option>
+                    <option id='nav1Choice' value disabled selected>--- Your choice ---</option>
                     <option id='nav1Choice' value="text">Easy</option>
                     <option id='nav1Choice' value="text">Medium</option>
                     <option id='nav1Choice' value="text">Hard</option>
