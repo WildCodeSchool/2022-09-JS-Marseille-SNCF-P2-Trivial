@@ -14,7 +14,7 @@ const App = () => {
       <Nav />
       {/* <Game /> */}
       {/* <Card /> */}
-      {begin ? <Game /> : <Content props={setBegin} />}
+      {begin ? <Game /> : <Content setBegin={setBegin} />}
       {/* <Content /> */}
       <Footer />
     </div>

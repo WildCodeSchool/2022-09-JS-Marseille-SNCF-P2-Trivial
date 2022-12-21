@@ -39,13 +39,16 @@ import imageCategory_31 from "../Images/ImagesCategories/imageCategory_31.jpg";
 //   { id: 31, name: "Entertainment: Japanese Anime & Manga" },
 //   { id: 32, name: "Entertainment: Cartoon & Animations" },
 // ];
-const Card = () => {
-  // const beginGameChild = () => props(true);
+const Card = ({ setBegin }) => {
+  // const beginGameChild = () => props(selectedCategory);
 
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
-    console.log(selectedCategory);
     // beginGameChild();
+
+    console.log(selectedCategory);
+    // const beginGameChild = () => props(true);
+    // return;
   }, [selectedCategory]);
 
   const [categories, setCategories] = useState([]);
@@ -79,7 +82,11 @@ const Card = () => {
   const allcategories = [...categories, { id: "", name: "Random Choice" }];
 
   const id_categories = [11, 12, 15, 18, 20, 21, 22, 31, ""];
-
+  const handleClick = (categoryArray) => {
+    setSelectedCategory([categoryArray.id, categoryArray.name]);
+    setBegin(true);
+    console.log(categoryArray, "categoryArray");
+  };
   return (
     <div className="containerCategoryContent">
       <div className="titleCategoryContent">
@@ -92,7 +99,7 @@ const Card = () => {
             <CardList
               name={category.name}
               imageCategory={imageCatCard[index]?.image}
-              onClick={() => setSelectedCategory([category.id, category.name])}
+              onClick={() => handleClick([category.id, category.name])}
             />
           </div>
         ))}

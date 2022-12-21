@@ -20,7 +20,7 @@ useEffect(() => {
     getGame()
 }, []);
 
-//console.log(game, "ici");
+console.log(game, "ici");
 
     return (
         <section className='Game'>
